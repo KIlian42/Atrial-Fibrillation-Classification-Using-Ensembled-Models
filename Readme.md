@@ -6,7 +6,7 @@ Please go to section [Setup](#Setup) for an installation guide to run this repos
 
 Kilian's Master Thesis: "Thesis Single-lead ECG classification based on Transformer models" (2023-2024).
 
-This readme shows Kilian's master thesis progress bi-weekly.
+This readme shows Kilian's master thesis progress updates each two weeks.
 
 ### 1st - 14th September
 
@@ -15,7 +15,7 @@ n.a.
 ### 18th - 31th August
 
 - Repository launch (26th August)
-- Prototype implementation of a Transformer model using both an encoder & decoder layer (see folder v1) trained on the Physionet 2017 challenge ~ 63% accuracy.
+- Prototype implementation of a Transformer model using both an encoder & decoder layer (see folder src > Implementation > Models > v1) trained on the Physionet 2017 challenge ~ 63% accuracy.
 
 # Setup
 
@@ -26,6 +26,8 @@ https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
 If not done yet, install Python 3.11: https://www.python.org/downloads/
 <br />
 If not done yet, install Pip (Package Installer Python): https://pip.pypa.io/en/stable/installation/
+<br />
+Please go to ... to download all trained models and to ... to download all necessary datasets for this repository.
 
 #### Installation
 
