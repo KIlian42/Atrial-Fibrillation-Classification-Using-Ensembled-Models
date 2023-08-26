@@ -234,4 +234,4 @@ if __name__ == '__main__':
         print(f"Test accuracy: {correct / total * 100:.2f}%")
     
     # Save model
-    torch.save(model.state_dict(), "mymdodel_large")
+    # torch.save(model.state_dict(), "mymdodel_large")
