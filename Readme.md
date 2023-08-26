@@ -31,7 +31,7 @@ If not done yet, install Pip (Package Installer Python): https://pip.pypa.io/en/
 
 1. Open a folder or directory on your computer, where you want to save the project.
 
-2. Open terminal on Mac OS or cmd (Command Prompt) on Windows.
+2. Open terminal on Mac OS or cmd (Command prompt) on Windows.
 
 3. Clone Repository
 ```
