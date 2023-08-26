@@ -33,7 +33,7 @@ If not done yet, install Pip (Package Installer Python): https://pip.pypa.io/en/
 
 2. Open terminal on Mac OS or cmd (Command prompt) on Windows.
 
-3. Clone Repository
+3. Clone repository
 ```
 git clone https://github.com/KIlian42/Atrial-Fibrillation-Classification-using-Transformer-models.git
 ```
