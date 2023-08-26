@@ -20,7 +20,7 @@ n.a.
 # Setup
 
 #### Prerequisites
-If not done yet, install Git CLI (Command Line Interface):
+If not done yet, install Git:
 https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
 <br />
 If not done yet, install Python 3.11: https://www.python.org/downloads/
