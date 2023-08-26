@@ -22,28 +22,30 @@ n.a.
 #### Prerequisites
 If not done yet, install Git CLI (Command Line Interface):
 https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
+<br />
 If not done yet, install Python 3.11: https://www.python.org/downloads/
+<br />
 If not done yet, install Pip (Package Installer Python): https://pip.pypa.io/en/stable/installation/
 
 #### Installation
 
-Open a folder or directory on your computer, where you want to save the project.
+1. Open a folder or directory on your computer, where you want to save the project.
 
-Open terminal on Mac OS or cmd (Command Prompt) on Windows.
+2. Open terminal on Mac OS or cmd (Command Prompt) on Windows.
 
-Clone Repository
+3. Clone Repository
 ```
 git clone https://github.com/KIlian42/Atrial-Fibrillation-Classification-using-Transformer-models.git
 ```
-Change directory
+4. Change directory
 ```
 cd Atrial-Fibrillation-Classification-using-Transformer-models
 ```
-Install library to create virtual environments
+5. Install library to create virtual environments
 ```
 pip install virtualenv
 ```
-Create Python 3.11 environment
+6. Create Python 3.11 environment
 > Mac OS:
 ```
 python3.11 -m venv .venv
@@ -52,7 +54,7 @@ python3.11 -m venv .venv
 ```
 py -3.11 -m venv .venv
 ```
-Source enviroment
+7. Source enviroment
 > Mac OS:
 ```
 source .venv/bin/activate
@@ -61,7 +63,7 @@ source .venv/bin/activate
 ```
 .venv\Scripts\activate.bat
 ```
-Install requirements
+8. Install requirements
 ```
 pip install -r requirements.txt
 ```
