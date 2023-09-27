@@ -8,9 +8,19 @@ Kilian's Master Thesis: "Thesis Single-lead ECG classification based on Transfor
 
 This readme shows Kilian's master thesis progress updates each two weeks.
 
+### 15th - 28th September
+
+Adaption thesis plan & research questions
+
+Research Datasets Physionet 2016, Physionet 2022
+
+Research ECG encoding strategies and feature extraction
+
+Research Transformer functionality (positional encoding and query, key, value matrices)
+
 ### 1st - 14th September
 
-n.a.
+Research - Papers (see research folder for related papers)
 
 ### 18th - 31th August
 
