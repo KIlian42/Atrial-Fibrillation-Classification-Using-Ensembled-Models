@@ -10,8 +10,6 @@ Notice: Winning paper of Physionet 2017 Single-lead ECG classifcation -> strateg
 
 Paper 2: Atrial fibrillation detection in outpatient electrocardiogram monitoring: An algorithmic crowdsourcing approach
 
-Notice: Paper contains list of feature extraction methods
-
 Paper 3: Explainable artificial intelligence to detect atrial fibrillation using electrocardiogram
 
 Paper 4: An artificial intelligence-enabled ECG algorithm for the identification of patients with atrial fibrillation during sinus rhythm: a retrospective analysis of outcome prediction
