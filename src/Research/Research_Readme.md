@@ -17,3 +17,7 @@ Paper 3: Explainable artificial intelligence to detect atrial fibrillation using
 Paper 4: An artificial intelligence-enabled ECG algorithm for the identification of patients with atrial fibrillation during sinus rhythm: a retrospective analysis of outcome prediction
 
 Paper 5: Early Rhythm-Control Therapy in Patients with Atrial Fibrillation
+
+=====
+
+Paper 6: A Wide and Deep Transformer Neural Network for 12-Lead ECG Classification
