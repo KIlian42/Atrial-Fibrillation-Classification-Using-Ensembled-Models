@@ -6,11 +6,11 @@ This file contains a list of papers, which are researched and documented during 
 
 Paper 1: Arrhythmia Classification from the Abductive Interpretation of Short Single-Lead ECG Records
 
-Notice: Winning paper of Physionet 2017 Single-lead ECG classifcation -> strategy: per beat labeling + CNN
+Notice: Winning paper of Physionet 2017 Single-lead ECG classifcation -> strategy: per beat labeling + LSTM stacking
 
 Paper 2: Atrial fibrillation detection in outpatient electrocardiogram monitoring: An algorithmic crowdsourcing approach
 
-Notice: Paper contains exensive feature description for ECGs
+Notice: Paper contains list of feature extraction methods
 
 Paper 3: Explainable artificial intelligence to detect atrial fibrillation using electrocardiogram
 
