@@ -12,7 +12,7 @@ This readme shows Kilian's master thesis progress updates each two weeks.
 
 Adaption thesis plan & research questions
 
-Research Datasets Physionet 2006, Physionet 2020 (distinction Atrial Flutter/Atrial Fibrillation)
+Research Datasets Physionet 2004, Physionet 2020 (distinction Atrial Flutter/Atrial Fibrillation)
 
 Research ECG encoding strategies and feature extraction
 
