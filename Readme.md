@@ -27,7 +27,7 @@ Research questions new:
 
 1. How to design and improve the Transformer architecture to enable transfer learning/fine-tuning for different ECG tasks and datasets monitored with different systems/number of leads/sample rates/durations/noise filters with the focus on AF related beat classification? (new)
 
-2. How to design the encoding layer of the Transformer model for ECG AF classification and how does the Transformer perform compared to a Transformer trained on extracted features from the signal? (reformulated / relates to new question 1)
+2. How to design the encoding layer of the Transformer model for ECG AF classification and how does the Transformer perform compared to a Transformer trained on extracted features from the signal? (reformulated)
 
 3. How well can a decoder-only Transformer-based approach predicts the next AF episode? (adapted/specified)
 
