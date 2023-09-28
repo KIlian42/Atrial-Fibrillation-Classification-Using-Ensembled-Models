@@ -10,9 +10,9 @@ This readme shows Kilian's master thesis progress updates each two weeks.
 
 ### 15th - 28th September
 
-Adaption research questions & thesis plan for related research:
+#### Adaption research questions & thesis plan for related research:
 
-Research quetions old:
+##### Research quetions old:
 
 1. How to design the encoding layer of the Transformer model for single-lead ECG classification (presence of atrial fibrillation) and how does the Transformer perform compared to a Transformer trained on extracted features from the signal?
 
@@ -23,7 +23,7 @@ Research quetions old:
 4. Can the Transformer model achieve 90%< accuracy on the PhysioNet 2017 challenge?
 
 
-Research questions new:
+##### Research questions new:
 
 1. How to design and improve the Transformer architecture to enable transfer learning/fine-tuning for different ECG tasks and datasets monitored with different systems/number of leads/sample rates/durations/noise filters with the focus on AF related beat classification? (new)
 
@@ -35,20 +35,20 @@ Research questions new:
 
 5. Can the Transformer model achieve 90%< accuracy on the PhysioNet 2017 challenge? (same)
 
-Research Datasets Physionet 2004, Physionet 2020 (distinction Atrial Flutter/Atrial Fibrillation)
+#### Research Datasets Physionet 2004, Physionet 2020 (distinction Atrial Flutter/Atrial Fibrillation)
 
-Research ECG encoding strategies and feature extraction
+#### Research ECG encoding strategies and feature extraction
 
-Research Transformer functionality (positional encoding and query, key, value matrices)
+#### Research Transformer functionality (positional encoding and query, key, value matrices)
 
 ### 1st - 14th September
 
-Research - Papers (see research folder for related papers)
+#### Research - Papers (see research folder for related papers)
 
 ### 18th - 31th August
 
-- Repository launch (26th August)
-- First try/prototype implementation of a Transformer model (based on a VisionTransformer for MNIST: https://medium.com/mlearning-ai/vision-transformers-from-scratch-pytorch-a-step-by-step-guide-96c3313c2e0c) using both an encoder & decoder layer (see folder src > Implementation > Models > v1) trained on the Physionet 2017 challenge for 10 epochs ~ 63.88% accuracy.
+#### Repository launch (26th August)
+#### First try/prototype implementation of a Transformer model (based on a VisionTransformer for MNIST: https://medium.com/mlearning-ai/vision-transformers-from-scratch-pytorch-a-step-by-step-guide-96c3313c2e0c) using both an encoder & decoder layer (see folder src > Implementation > Models > v1) trained on the Physionet 2017 challenge for 10 epochs ~ 63.88% accuracy.
 
 # Setup
 
