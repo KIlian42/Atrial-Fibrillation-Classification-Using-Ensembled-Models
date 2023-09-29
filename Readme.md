@@ -22,10 +22,9 @@ This readme shows Kilian's master thesis progress updates each two weeks.
 
 4. Can the Transformer model achieve 90%< accuracy on the PhysioNet 2017 challenge?
 
-
 ##### Research questions new:
 
-1. How to design and improve the Transformer architecture to enable transfer learning/fine-tuning for different ECG tasks and datasets monitored with different systems/number of leads/sample rates/durations/noise filters with the focus on AF related beat classification? (new)
+1. How to design and improve the Transformer architecture to enable transfer learning or fine-tuning for different ECG tasks and datasets monitored through different systems, number of leads, sample rates, durations and noise filters, with the focus on AF related beat classification? (new)
 
 2. How to design the encoding layer of the Transformer model for ECG AF classification and how does the Transformer perform compared to a Transformer trained on extracted features from the signal? (reformulated)
 
@@ -35,7 +34,63 @@ This readme shows Kilian's master thesis progress updates each two weeks.
 
 5. Can the Transformer model achieve 90%< accuracy on the PhysioNet 2017 challenge? (same)
 
-#### Research Datasets Physionet 2004, Physionet 2020 (distinction Atrial Flutter/Atrial Fibrillation)
+#### Research potential Physionet Challenges Datasets
+
+##### Physionet 2021: "Will Two Do? Varying Dimensions in Electrocardiography: The PhysioNet/Computing in Cardiology Challenge 2021"
+
+-> Objective to classify and compare 12-lead, 6-lead, 4-lead, 3-lead, 2-lead
+
+##### Physionet 2020: "Classification of 12-lead ECGs: The PhysioNet/Computing in Cardiology Challenge 2020"
+
+Dataset contains distinction of Atrial Flutter and Atrial Fibrillation
+
+##### Physionet 2017: "AF Classification from a Short Single Lead ECG Recording: The PhysioNet/Computing in Cardiology Challenge 2017"
+
+Single-lead dataset with Sinus rythm, Atrial Flutter, noise rythm and other
+
+##### Physionet 2014: "Robust Detection of Heart Beats in Multimodal Data: The PhysioNet/Computing in Cardiology Challenge 2014"
+
+Long-term ECGs (10 minutes) could be used to forecast QRS beat detection
+
+##### Physionet 2013: "Noninvasive Fetal ECG: The PhysioNet/Computing in Cardiology Challenge 2013"
+
+// (focuses on fetal ECGs)
+
+##### Physionet 2011: Improving the Quality of ECGs Collected using Mobile Phones: The PhysioNet/Computing in Cardiology Challenge 2011
+
+12-lead ECGs amaing to classify signal quality: A (0.95): Excellent, B (0.85): Good, C (0.75): Adequate, D (0.60): Poor, F (0): Unacceptable
+
+##### Physionet 2010: Mind the Gap: The PhysioNet/Computing in Cardiology Challenge 2010
+
+Contains long-term ECGS (10 minutes) and 30 seconds signal gaps at the end -> predict/reconstruct signal
+
+##### Physionet 2009: Predicting Acute Hypotensive Episodes: The PhysioNet/Computing in Cardiology Challenge 2009
+
+Contains 5000 ECG -> predict which patients in the challenge dataset will experience an acute hypotensive episode beginning within the forecast window
+
+##### Physionet 2006: QT Interval Measurement: The PhysioNet/Computing in Cardiology Challenge 2006
+
+QT Interval detection using 12-lead ECGs and 3 Frank (XYZ) leads
+
+##### Physionet 2004: Spontaneous Termination of Atrial Fibrillation: The PhysioNet/Computing in Cardiology Challenge 2004
+
+Predict AF termination using 2-lead ECGs in 1 minute length
+
+##### Physionet 2003: Distinguishing Ischemic from Non-Ischemic ST Changes: The PhysioNet/Computing in Cardiology Challenge 2003
+
+2- and 3-lead long-term (20-24 hour) ECGs classifying the ST changes (events) in the test set as ischemic or non-ischemic
+
+##### Physionet 2002: RR Interval Time Series Modeling: The PhysioNet/Computing in Cardiology Challenge 2002
+
+// modified RR time series for forecasting
+
+##### Physionet 2001: Predicting Paroxysmal Atrial Fibrillation/Flutter: The PhysioNet/Computing in Cardiology Challenge 2001
+
+1-lead 24-hour ECGs classifying Paroxysmal Atrial Fibrillation/Flutter
+
+##### Physionet 2000: Detecting and Quantifying Apnea Based on the ECG: The PhysioNet/Computing in Cardiology Challenge 2000
+
+1-lead 8-hour ECGs for sleep apnea classification per minute
 
 #### Research ECG encoding strategies and feature extraction
 
