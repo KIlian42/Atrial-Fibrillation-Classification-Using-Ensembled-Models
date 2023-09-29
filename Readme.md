@@ -50,7 +50,7 @@ This readme shows Kilian's master thesis progress updates each two weeks.
 
 ##### Physionet 2016: "Classification of Heart Sound Recordings: The PhysioNet/Computing in Cardiology Challenge 2016"
 
-// possibly only contains sounds but focus on AF classification
+// only contains sounds but focuses on AF classification
 
 ##### Physionet 2014: "Robust Detection of Heart Beats in Multimodal Data: The PhysioNet/Computing in Cardiology Challenge 2014"
 
