@@ -38,67 +38,75 @@ This readme shows Kilian's master thesis progress updates each two weeks.
 
 ##### Physionet 2021: "Will Two Do? Varying Dimensions in Electrocardiography: The PhysioNet/Computing in Cardiology Challenge 2021"
 
--> Objective to classify and compare 12-lead, 6-lead, 4-lead, 3-lead, 2-lead
+-> Objective to classify and compare 12-lead, 6-lead, 4-lead, 3-lead, 2-lead (short-team: 6 and 144 seconds) ECGs
 
 ##### Physionet 2020: "Classification of 12-lead ECGs: The PhysioNet/Computing in Cardiology Challenge 2020"
 
-Dataset contains distinction of Atrial Flutter and Atrial Fibrillation
+-> Dataset contains distinction of Atrial Flutter and Atrial Fibrillation
 
 ##### Physionet 2017: "AF Classification from a Short Single Lead ECG Recording: The PhysioNet/Computing in Cardiology Challenge 2017"
 
-Single-lead dataset with Sinus rythm, Atrial Flutter, noise rythm and other
+-> Single-lead short-team (1 minute) ECGs dataset for classification of Sinus Rythm, Atrial Flutter, Noise rythm and Other
+
+##### Physionet 2016: "Classification of Heart Sound Recordings: The PhysioNet/Computing in Cardiology Challenge 2016"
+
+// possibly only contains sounds but focus on AF classification
 
 ##### Physionet 2014: "Robust Detection of Heart Beats in Multimodal Data: The PhysioNet/Computing in Cardiology Challenge 2014"
 
-Long-term ECGs (10 minutes) could be used to forecast QRS beat detection
+-> Long-term ECGs (10 minutes) for QRS beat detection
 
 ##### Physionet 2013: "Noninvasive Fetal ECG: The PhysioNet/Computing in Cardiology Challenge 2013"
 
 // (focuses on fetal ECGs)
 
-##### Physionet 2011: Improving the Quality of ECGs Collected using Mobile Phones: The PhysioNet/Computing in Cardiology Challenge 2011
+##### Physionet 2011: "Improving the Quality of ECGs Collected using Mobile Phones: The PhysioNet/Computing in Cardiology Challenge 2011"
 
-12-lead ECGs amaing to classify signal quality: A (0.95): Excellent, B (0.85): Good, C (0.75): Adequate, D (0.60): Poor, F (0): Unacceptable
+-> 12-lead short-team ECGs to classify signal quality: A (0.95): Excellent, B (0.85): Good, C (0.75): Adequate, D (0.60): Poor, F (0): Unacceptable
 
-##### Physionet 2010: Mind the Gap: The PhysioNet/Computing in Cardiology Challenge 2010
+##### Physionet 2010: "Mind the Gap: The PhysioNet/Computing in Cardiology Challenge 2010"
 
-Contains long-term ECGS (10 minutes) and 30 seconds signal gaps at the end -> predict/reconstruct signal
+-> Contains long-term ECGS (10 minutes) and 30 seconds signal gaps at the end -> predict/reconstruct signal
 
-##### Physionet 2009: Predicting Acute Hypotensive Episodes: The PhysioNet/Computing in Cardiology Challenge 2009
+##### Physionet 2009: "Predicting Acute Hypotensive Episodes: The PhysioNet/Computing in Cardiology Challenge 2009"
 
-Contains 5000 ECG -> predict which patients in the challenge dataset will experience an acute hypotensive episode beginning within the forecast window
+-> Contains 5000 ECG -> predict which patients in the challenge dataset will experience an acute hypotensive episode beginning within the forecast window
 
-##### Physionet 2006: QT Interval Measurement: The PhysioNet/Computing in Cardiology Challenge 2006
+##### Physionet 2008: "Detecting and Quantifying T-Wave Alternans: The PhysioNet/Computing in Cardiology Challenge 2008"
 
-QT Interval detection using 12-lead ECGs and 3 Frank (XYZ) leads
+-> Diverse dataset mit differen lead- and length-recordings (monstly long-term) for classification of T-wave alternans
 
-##### Physionet 2004: Spontaneous Termination of Atrial Fibrillation: The PhysioNet/Computing in Cardiology Challenge 2004
+##### Physionet 2006: "QT Interval Measurement: The PhysioNet/Computing in Cardiology Challenge 2006"
 
-Predict AF termination using 2-lead ECGs in 1 minute length
+-> QT Interval detection using 12-lead short-team (2 minutes) ECGs and 3 Frank (XYZ) leads
 
-##### Physionet 2003: Distinguishing Ischemic from Non-Ischemic ST Changes: The PhysioNet/Computing in Cardiology Challenge 2003
+##### Physionet 2004: "Spontaneous Termination of Atrial Fibrillation: The PhysioNet/Computing in Cardiology Challenge 2004"
 
-2- and 3-lead long-term (20-24 hour) ECGs classifying the ST changes (events) in the test set as ischemic or non-ischemic
+-> Predict AF termination using 2-lead ECGs in 1 minute length
 
-##### Physionet 2002: RR Interval Time Series Modeling: The PhysioNet/Computing in Cardiology Challenge 2002
+##### Physionet 2003: "Distinguishing Ischemic from Non-Ischemic ST Changes: The PhysioNet/Computing in Cardiology Challenge 2003"
+
+-> 2- and 3-lead long-term (20-24 hour) ECGs classifying the ST changes (events) in the test set as ischemic or non-ischemic
+
+##### Physionet 2002: "RR Interval Time Series Modeling: The PhysioNet/Computing in Cardiology Challenge 2002"
 
 // modified RR time series for forecasting
 
-##### Physionet 2001: Predicting Paroxysmal Atrial Fibrillation/Flutter: The PhysioNet/Computing in Cardiology Challenge 2001
+##### Physionet 2001: "Predicting Paroxysmal Atrial Fibrillation/Flutter: The PhysioNet/Computing in Cardiology Challenge 2001"
 
-1-lead 24-hour ECGs classifying Paroxysmal Atrial Fibrillation/Flutter
+-> 1-lead 24-hour ECGs classifying Paroxysmal Atrial Fibrillation/Flutter
 
-##### Physionet 2000: Detecting and Quantifying Apnea Based on the ECG: The PhysioNet/Computing in Cardiology Challenge 2000
+##### Physionet 2000: "Detecting and Quantifying Apnea Based on the ECG: The PhysioNet/Computing in Cardiology Challenge 2000"
 
-1-lead 8-hour ECGs for sleep apnea classification per minute
-
-#### Research ECG encoding strategies and feature extraction
+-> 1-lead 8-hour ECGs for sleep apnea classification per minute
 
 #### Research Transformer functionality (positional encoding and query, key, value matrices)
 
+#### Research ECG encoding strategies and feature extraction
+
 ### 1st - 14th September
 
-#### Research - Papers (see research folder for related papers)
+#### Research - read papers (see research folder for related papers)
 
 ### 18th - 31th August
 
