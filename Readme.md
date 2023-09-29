@@ -38,7 +38,7 @@ This readme shows Kilian's master thesis progress updates each two weeks.
 
 ##### Physionet 2021: "Will Two Do? Varying Dimensions in Electrocardiography: The PhysioNet/Computing in Cardiology Challenge 2021"
 
--> Objective to classify and compare 12-lead, 6-lead, 4-lead, 3-lead, 2-lead (short-team: 6 and 144 seconds) ECGs
+-> Objective to classify and compare 12-lead, 6-lead, 4-lead, 3-lead, 2-lead (short-term: 6 and 144 seconds) ECGs
 
 ##### Physionet 2020: "Classification of 12-lead ECGs: The PhysioNet/Computing in Cardiology Challenge 2020"
 
@@ -46,7 +46,7 @@ This readme shows Kilian's master thesis progress updates each two weeks.
 
 ##### Physionet 2017: "AF Classification from a Short Single Lead ECG Recording: The PhysioNet/Computing in Cardiology Challenge 2017"
 
--> Single-lead short-team (1 minute) ECGs dataset for classification of Sinus Rythm, Atrial Flutter, Noise rythm and Other
+-> Single-lead short-term (1 minute) ECGs dataset for classification of Sinus Rythm, Atrial Flutter, Noise rythm and Other
 
 ##### Physionet 2016: "Classification of Heart Sound Recordings: The PhysioNet/Computing in Cardiology Challenge 2016"
 
@@ -62,7 +62,7 @@ This readme shows Kilian's master thesis progress updates each two weeks.
 
 ##### Physionet 2011: "Improving the Quality of ECGs Collected using Mobile Phones: The PhysioNet/Computing in Cardiology Challenge 2011"
 
--> 12-lead short-team ECGs to classify signal quality: A (0.95): Excellent, B (0.85): Good, C (0.75): Adequate, D (0.60): Poor, F (0): Unacceptable
+-> 12-lead short-term ECGs to classify signal quality: A (0.95): Excellent, B (0.85): Good, C (0.75): Adequate, D (0.60): Poor, F (0): Unacceptable
 
 ##### Physionet 2010: "Mind the Gap: The PhysioNet/Computing in Cardiology Challenge 2010"
 
@@ -78,7 +78,7 @@ This readme shows Kilian's master thesis progress updates each two weeks.
 
 ##### Physionet 2006: "QT Interval Measurement: The PhysioNet/Computing in Cardiology Challenge 2006"
 
--> QT Interval detection using 12-lead short-team (2 minutes) ECGs and 3 Frank (XYZ) leads
+-> QT Interval detection using 12-lead short-term (2 minutes) ECGs and 3 Frank (XYZ) leads
 
 ##### Physionet 2004: "Spontaneous Termination of Atrial Fibrillation: The PhysioNet/Computing in Cardiology Challenge 2004"
 
