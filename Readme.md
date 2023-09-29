@@ -28,7 +28,7 @@ This readme shows Kilian's master thesis progress updates each two weeks.
 
 2. How to design the encoding layer of the Transformer model for ECG AF classification and how does the Transformer perform compared to a Transformer trained on extracted features from the signal? (reformulated)
 
-3. How well can a decoder-only Transformer-based approach predicts the next AF episode? (adapted/specified)
+3. How well can a decoder-only Transformer-based approach predicts the next AF episode? (adapted/to be specified)
 
 4. How well do the Transformer model perform on long-term ECGs? (same)
 
