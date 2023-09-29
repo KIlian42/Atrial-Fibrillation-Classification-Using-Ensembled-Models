@@ -1,7 +1,5 @@
 # Readme.md
 
-![ECG](https://github.com/KIlian42/Atrial-Fibrillation-Classification-using-Transformer-models/assets/57774167/d3913568-4f78-4815-91a7-028b23bda587)
-
 Please go to section [Setup](#Setup) for an installation guide to run this repository.
 
 ## Progress update
