@@ -129,7 +129,7 @@ Please go to ... to download all trained models and to ... to download all neces
 
 1. Open a folder or directory on your computer, where you want to save the project.
 
-2. Open terminal on Mac OS or cmd (Command prompt) on Windows.
+2. Open terminal on Mac OS/Linux or cmd (Command prompt) on Windows.
 
 3. Clone repository
 ```
@@ -144,7 +144,7 @@ cd Atrial-Fibrillation-Classification-using-Transformer-models
 pip install virtualenv
 ```
 6. Create Python 3.11 environment
-> Mac OS:
+> Mac OS/Linux:
 ```
 python3.11 -m venv .venv
 ```
@@ -153,7 +153,7 @@ python3.11 -m venv .venv
 py -3.11 -m venv .venv
 ```
 7. Source enviroment
-> Mac OS:
+> Mac OS/Linux:
 ```
 source .venv/bin/activate
 ```
