@@ -7,7 +7,7 @@ def split_list(a, n):
 
 def load_data():
     # ECG data
-    h5file =  h5py.File("src/Data/Datasets/physio.h5", 'r')
+    h5file =  h5py.File("src/Datasets/Data/physio.h5", 'r')
     data_keys = list(h5file.keys())
     print("Found data:", len(data_keys))
     ecg_data = {}
