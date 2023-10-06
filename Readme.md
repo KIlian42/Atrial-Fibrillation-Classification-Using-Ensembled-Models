@@ -11,7 +11,7 @@ This readme shows Kilian's master thesis progress updates each two weeks.
 ### 29th September - 13th October
 
 1. Downloaded, investigated Physionet 2020 ECG data and preprocessed it into .h5 files for training.
-<br />-> See all code in Implementation/v2
+<br />-> See all code in src/Implementation/v2
 <br />-> First run download_Physionet2020_from_kaggle.py, then write_ECGS_to_h5_file.py and then train.py
 2. Adds Transformer (encoder-only) implementation in Keras and adaptable stacked block size.
 3. Next: Hyperparameter tuning and training execution in Google Colab/on vast.ai with GPUs.
