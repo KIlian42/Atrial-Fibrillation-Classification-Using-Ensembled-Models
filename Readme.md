@@ -8,6 +8,12 @@ Kilian's Master Thesis: "Single-lead ECG classification based on Transformer mod
 
 This readme shows Kilian's master thesis progress updates each two weeks.
 
+### 29th September - 13th October
+
+1. Downloaded, investigatd Physionet 2020 ECG data and preprocessed it into .h5 files for training.
+2. Adds Transformer (encoder-only) implementation with KERAS and adaptable stacked block size.
+3. Next: Hyperparameter tuning and training execution in Google Colab/on vast.ai with GPUs.
+
 ### 15th - 28th September
 
 #### Adaption research questions & thesis plan for related research:
