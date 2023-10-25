@@ -24,7 +24,7 @@ This readme shows Kilian's master thesis progress updates each two weeks.
 <br />-> More data collection on Atrial Fibrillation vs. Atrial Flutter databases: https://www.medrxiv.org/content/10.1101/2023.08.08.23293815v1.full
 <br />-> Investigate ECG data augmentation techniques
 <br />-> Investigatation of interesting work by Darts library for deep learning forecasting using TCNN and Transformer models: https://github.com/unit8co/darts
-<br />-> Investigatation and implementation of different feature extraction methods, filters and spectograms, an interesting work here is: https://gist.github.com/antonior92/da7f1e884428aa35fda20e2820181280)
+<br />-> Investigatation and implementation of different feature extraction methods, filters and spectograms, an interesting work here is: https://github.com/awerdich/physionet
 <br />-> (Optional, if needed) Prepare training script with CUDA to pre-train best model (parameter settings/input choice) using Google Colab with a larger A100 GPU -> to later fine-tune it on UM data using the UM cluster (if accessible)
 
 ### 29th September - 13th October
