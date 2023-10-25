@@ -23,7 +23,7 @@ This readme shows Kilian's master thesis progress updates each two weeks.
 <br />-> Evaluation and work on thesis (model/metrics plots) / write down (research) findings so far
 <br />-> Possible more data collection on Atrial Fibrillation vs. Atrial Flutter databases, a paper here: https://www.medrxiv.org/content/10.1101/2023.08.08.23293815v1.full
 <br />-> Investigation of ECG data augmentation techniques
-<br />-> Investigatation of interesting library, called "Darts", for deep learning forecasting model collections, i.e. TCNN and Transformer models for timeseries forecasting: https://github.com/unit8co/darts
+<br />-> Investigatation of interesting library for deep learning forecasting, called "Darts", collects bunch of models, i.e. TCNN and Transformer models for timeseries forecasting: https://github.com/unit8co/darts
 <br />-> Investigatation and implementation of different feature extraction methods, filters and spectograms, an interesting work here is: https://github.com/awerdich/physionet
 <br />-> (Optional, if needed) Prepare training script with CUDA enabled to pre-train best model (parameter settings/input choice) using Google Colab with a larger A100 GPU -> to later fine-tune it on UM data using the UM cluster (if accessible)
 
