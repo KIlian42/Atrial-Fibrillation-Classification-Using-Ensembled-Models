@@ -8,13 +8,32 @@ Kilian's Master Thesis: "Single-lead ECG classification based on Transformer mod
 
 This readme shows Kilian's master thesis progress updates each two weeks.
 
+### 14th October - 27th October
+
+1. Trained a baseline Residual CNN model on Physionet 2017 with 82% validation accuracy.
+<br />2. Trained a baseline Residual CNN model on Physionet 2020 (sinus, fibrillation, flutter) with 90% validation accuracy.
+<br />-> for current results see plots in src/Implementation/v3/results
+
+##### Next steps:
+<br />-> Repostiory will be configured private.
+<br />-> Training of baseline Residual CNN model on UM data.
+<br />-> Model adaption using a Transformer-encoder layer and train a baseline Temporal Convolutional network
+<br />-> Investigate all collected papers on Transformer models trained on ECG to identify detailed approaches and build solution model with PyTorch instead Keras
+<br />-> Implementation of hyperparameter tuning, Crossvalidation and different measure metrics (i.e. F1 score, Precision, Recall).
+<br />-> Work on thesis (model/metrics plots) and write down (research) findings so far.
+<br />-> More data collection on Atrial Fibrillation vs. Atrial Flutter databases: https://www.medrxiv.org/content/10.1101/2023.08.08.23293815v1.full
+<br />-> Investigate ECG data augmentation techniques
+<br />-> Investigatation of interesting work by Darts library for deep learning forecasting using TCNN and Transformer models: https://github.com/unit8co/darts
+<br />-> Investigatation and implementation of different feature extraction methods, filters and spectograms, an interesting work here is: https://gist.github.com/antonior92/da7f1e884428aa35fda20e2820181280)
+<br />-> (Optional, if needed) Prepare training script with CUDA to pre-train best model (parameter settings/input choice) using Google Colab with a larger A100 GPU -> to later fine-tune it on UM data using the UM cluster (if accessible)
+
 ### 29th September - 13th October
 
 1. Downloaded, investigated Physionet 2020 ECG data and preprocessed it into .h5 files for training.
 <br />-> See all code in src/Implementation/v2
 <br />-> First run download_Physionet2020_from_kaggle.py, then write_ECGS_to_h5_file.py and then train.py
 2. Adds Transformer (encoder-only) implementation in Keras and adaptable stacked block size.
-3. Next: Hyperparameter tuning and training execution in Google Colab/on vast.ai with GPUs.
+-> Findings/Conclusion: model did not learn yet, because architecture was too complex.
 
 ### 15th - 28th September
 
