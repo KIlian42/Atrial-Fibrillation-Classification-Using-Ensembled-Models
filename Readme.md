@@ -14,16 +14,16 @@ This readme shows Kilian's master thesis progress updates each two weeks.
 2. Trained a baseline Residual CNN model on Physionet 2020 (sinus, fibrillation, flutter) with 90% validation accuracy.
 <br />-> for current results see plots in src/Implementation/v3/results
 
-##### Next steps:
+##### Next steps / Roadmap:
 -> Repostiory will be configured private.
 <br />-> Training of baseline Residual CNN model on UM data.
 <br />-> Model adaption using a Transformer-encoder layer and train a baseline Temporal Convolutional network
-<br />-> Investigate all collected papers on Transformer models trained on ECG to identify detailed approaches and speficy weaknesses and build solution model with PyTorch instead Keras (research questions may be more specified during this step)
+<br />-> Investigate all collected papers on ECG Transformer models to for different approaches, identify/speficy weaknesses (research questions may be further specified during this step) and build solution model with PyTorch instead Keras
 <br />-> Implementation of hyperparameter tuning, cross-validation and different measure metrics (i.e. F1 score, Precision, Recall).
-<br />-> Work on thesis (model/metrics plots) and write down (research) findings so far.
-<br />-> More data collection on Atrial Fibrillation vs. Atrial Flutter databases: https://www.medrxiv.org/content/10.1101/2023.08.08.23293815v1.full
-<br />-> Investigate ECG data augmentation techniques
-<br />-> Investigatation of interesting work by Darts library for deep learning forecasting using TCNN and Transformer models: https://github.com/unit8co/darts
+<br />-> Evaluation and work on thesis (model/metrics plots) / write down (research) findings so far.
+<br />-> Possible more data collection on Atrial Fibrillation vs. Atrial Flutter databases, a paper here: https://www.medrxiv.org/content/10.1101/2023.08.08.23293815v1.full
+<br />-> Investigation of ECG data augmentation techniques
+<br />-> Investigatation of interesting Darts library for deep learning forecasting model collections, i.e. TCNN and Transformer models for timeseries forecasting: https://github.com/unit8co/darts
 <br />-> Investigatation and implementation of different feature extraction methods, filters and spectograms, an interesting work here is: https://github.com/awerdich/physionet
 <br />-> (Optional, if needed) Prepare training script with CUDA to pre-train best model (parameter settings/input choice) using Google Colab with a larger A100 GPU -> to later fine-tune it on UM data using the UM cluster (if accessible)
 
