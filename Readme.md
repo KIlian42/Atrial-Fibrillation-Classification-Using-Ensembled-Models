@@ -18,7 +18,7 @@ This readme shows Kilian's master thesis progress updates each two weeks.
 -> Repostiory will be configured private.
 <br />-> Training of baseline Residual CNN model on UM data.
 <br />-> Model adaption using a Transformer-encoder layer and train a baseline Temporal Convolutional network
-<br />-> Investigate all collected papers on Transformer models trained on ECG to identify detailed approaches and build solution model with PyTorch instead Keras
+<br />-> Investigate all collected papers on Transformer models trained on ECG to identify detailed approaches and speficy weaknesses and build solution model with PyTorch instead Keras (research questions may be more specified during this step)
 <br />-> Implementation of hyperparameter tuning, Crossvalidation and different measure metrics (i.e. F1 score, Precision, Recall).
 <br />-> Work on thesis (model/metrics plots) and write down (research) findings so far.
 <br />-> More data collection on Atrial Fibrillation vs. Atrial Flutter databases: https://www.medrxiv.org/content/10.1101/2023.08.08.23293815v1.full
