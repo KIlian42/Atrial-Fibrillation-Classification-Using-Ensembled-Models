@@ -18,14 +18,14 @@ This readme shows Kilian's master thesis progress updates each two weeks.
 -> Repostiory will be configured private.
 <br />-> Training of baseline Residual CNN model on UM data.
 <br />-> Model adaption using a Transformer-encoder layer and train a baseline Temporal Convolutional network
-<br />-> Investigate all collected papers on ECG Transformer models (see proposal: src/Research/Master Thesis) with focus on different approaches, identify/speficy limitations/weaknesses (research questions may be further specified during this step) and build solution model with PyTorch instead Keras
-<br />-> Implementation of hyperparameter tuning, cross-validation and different measure metrics (i.e. F1 score, Precision, Recall).
-<br />-> Evaluation and work on thesis (model/metrics plots) / write down (research) findings so far.
+<br />-> Investigate all collected papers on ECG Transformer models (see proposal src/Research/Master Thesis) with focus on different approaches, identify/speficy limitations/weaknesses (research questions may be further specified during this step) and build solution model with PyTorch instead Keras
+<br />-> Implementation of hyperparameter tuning, cross-validation and different measure metrics (i.e. F1 score, Precision, Recall)
+<br />-> Evaluation and work on thesis (model/metrics plots) / write down (research) findings so far
 <br />-> Possible more data collection on Atrial Fibrillation vs. Atrial Flutter databases, a paper here: https://www.medrxiv.org/content/10.1101/2023.08.08.23293815v1.full
 <br />-> Investigation of ECG data augmentation techniques
-<br />-> Investigatation of interesting Darts library for deep learning forecasting model collections, i.e. TCNN and Transformer models for timeseries forecasting: https://github.com/unit8co/darts
+<br />-> Investigatation of interesting library, called "Darts", for deep learning forecasting model collections, i.e. TCNN and Transformer models for timeseries forecasting: https://github.com/unit8co/darts
 <br />-> Investigatation and implementation of different feature extraction methods, filters and spectograms, an interesting work here is: https://github.com/awerdich/physionet
-<br />-> (Optional, if needed) Prepare training script with CUDA to pre-train best model (parameter settings/input choice) using Google Colab with a larger A100 GPU -> to later fine-tune it on UM data using the UM cluster (if accessible)
+<br />-> (Optional, if needed) Prepare training script with CUDA enabled to pre-train best model (parameter settings/input choice) using Google Colab with a larger A100 GPU -> to later fine-tune it on UM data using the UM cluster (if accessible)
 
 ### 29th September - 13th October
 
@@ -33,7 +33,7 @@ This readme shows Kilian's master thesis progress updates each two weeks.
 <br />-> See all code in src/Implementation/v2
 <br />-> First run download_Physionet2020_from_kaggle.py, then write_ECGS_to_h5_file.py and then train.py
 2. Adds Transformer (encoder-only) implementation in Keras and adaptable stacked block size.
--> Findings/Conclusion: model did not learn yet, because architecture was too complex.
+<br /-> Findings/Conclusion: model did not learn yet, because architecture was too complex.
 
 ### 15th - 28th September
 
