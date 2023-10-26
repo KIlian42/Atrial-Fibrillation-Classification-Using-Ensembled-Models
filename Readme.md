@@ -14,7 +14,7 @@ This readme shows Kilian's master thesis progress updates each two weeks.
 2. Trained a baseline Residual CNN model on Physionet 2020 (sinus, fibrillation, flutter) with 90% validation accuracy.
 <br />-> for current results see plots in src/Implementation/v3/results
 
-#### Next steps / Roadmap:
+#### Next steps planned:
 -> Repostiory will be configured private.
 <br />-> Training of baseline Residual CNN model on UM data.
 <br />-> Model adaption using a Transformer-encoder layer and train a baseline Temporal Convolutional network
