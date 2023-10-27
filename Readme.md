@@ -16,7 +16,7 @@ This readme shows Kilian's master thesis progress updates each two weeks.
 2. Trained a baseline Residual CNN model on Physionet 2020 (sinus, fibrillation, flutter) with 90% validation accuracy
 -> for current results see plots in src/Implementation/v3/results 
 3. Accessed and setted up UM VPN
-4. Some research (see links/libraries in [Next-steps-planned](#Next-steps-planned) section) and added papers about Transformer models (see list of papers in src/Research/Research_Readme.md) and currently investigating them closer to identify limitations 
+4. Some research (see links/libraries in [Next-steps-planned](#Next-steps-planned) section) and added papers about Transformer models (see list of papers in src/Research/Research_Readme.md) -> I currently still investigate the papers to get an overview of Transformer-based implementation approaches in detail and to identify limitations 
 #### Notes from last meeting
 - Use PyTorch instead Keras 
 - Split data (training/tests) by patients
