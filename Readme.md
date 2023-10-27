@@ -32,7 +32,7 @@ This readme shows Kilian's master thesis progress updates each two weeks.
 3. How well can a decoder-only Transformer-based approach predicts the next AF episode?
 4. How well do the Transformer model perform on long-term ECGs?
 5. Can the Transformer model achieve 90%< accuracy on the PhysioNet 2017 challenge?
-<br /><br />New research questions proposals:
+<br /><br />New research questions proposals from last meeting:
 <br />-> i.e. Can a Transformer model capture spatial information from the 12-lead ECG signals? (encoding each lead as a query -> investigate the relations among the leads)
 <br />-> i.e. Can ensemble models perform better than one big model on ECG classification (i.e. stacking of TCNN and Transformer ... SVM, LSTM)
 <br />-> notice: I will further specify/finalize the research questions in the next days and during my experiments with regard to related research limitations
