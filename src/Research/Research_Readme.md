@@ -8,7 +8,7 @@ This readme contains a list of papers, which has been researched and are comment
 
 Paper 1: Transforming ECG Diagnosis: An In-depth Review of Transformer-based Deep Learning Models in Cardiovascular Disease Detection: https://arxiv.org/abs/2306.01249
 
-### Single-lead ECG
+### Transformer-based single-lead ECG models
 
 Paper 2: A transformer-based deep neural network for arrhythmia detection using continuous ECG signals: https://www.sciencedirect.com/science/article/pii/S0010482522001172 (From review: see Paper 1)
 
@@ -22,7 +22,7 @@ Paper 6: An Arrhythmia Classification Model Based on Vision Transformer with Def
 
 Paper 7: Constrained transformer network for ECG signal processing and arrhythmia classification: https://www.researchgate.net/publication/352271973_Constrained_transformer_network_for_ECG_signal_processing_and_arrhythmia_classification
 
-### 12-lead ECG
+### Transformer-based 12-lead ECG models
 
 Paper 8: A Wide and Deep Transformer Neural Network for 12-Lead ECG Classification: https://ieeexplore.ieee.org/document/9344053
 
