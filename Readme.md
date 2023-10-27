@@ -2,6 +2,8 @@
 
 Please go to section [Setup](#Setup) for an installation guide to run this repository.
 
+![ECG-example-Normal-ECG-with-sinus-rhythm-7](https://github.com/KIlian42/Atrial-Fibrillation-Classification-using-Transformer-models/assets/57774167/76eb06e9-876c-4e80-a13c-bd5f0acb6c0b)
+
 ![attention-output](https://github.com/KIlian42/Atrial-Fibrillation-Classification-using-Transformer-models/assets/57774167/779fef64-64a3-47b3-b908-c7e98fd013bf)
 
 ## Progress update
