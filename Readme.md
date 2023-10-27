@@ -22,11 +22,11 @@ This readme shows Kilian's master thesis progress updates each two weeks.
 - Consecutive order of recordings might be important for analysis
 - Try wavelet transformations
 - Have a look at ICU challenge data
-- Further specify research questions (i.e. 1 and since question 2 is partly described in 1):
+- Further specify research questions:
 -> i.e. Can a Transformer model capture spatial information from the 12-lead ECG signals? (encoding each lead as a query -> investigate the relations among the leads)
 -> i.e. Can ensemble models perform better than one big model on ECG classification (i.e. stacking of TCNN and Transformer ... SVM, LSTM)
 -> notice: I will further specify the research questions during my readings through the papers any my model design
-<br />Research questions so far:
+<br />Research questions so far (question 2 is partly covered in 1 -> needs to be reformulated):
 1. How to design and improve the Transformer architecture to enable transfer learning or fine-tuning for different ECG tasks and datasets monitored through different systems, number of leads, sample rates, durations and noise filters, with the focus on AF related beat classification?
 2. How to design the encoding layer of the Transformer model for ECG AF classification and how does the Transformer perform compared to a Transformer trained on extracted features from the signal?
 3. How well can a decoder-only Transformer-based approach predicts the next AF episode?
