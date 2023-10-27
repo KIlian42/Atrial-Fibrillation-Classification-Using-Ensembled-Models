@@ -18,7 +18,7 @@ This readme shows Kilian's master thesis progress updates each two weeks.
 3. Accessed and setted up UM VPN
 4. Further research (see [Next-steps-planned](#Next-steps-planned)) and added papers about Transformer models (see list of papers in src/Research/Research_Readme.md) and currently investigating them closer to identify limitations 
 #### Notes from last meeting
-- use PyTorch instead Keras 
+- Use PyTorch instead Keras 
 - Split data (training/tests) by patients
 - Take care of sampling rate (i.e. microvolt vs milivolt sample rates)
 - Consecutive order of recordings might be important for analysis
