@@ -25,26 +25,27 @@ This readme shows Kilian's master thesis progress updates each two weeks.
 - Consecutive order of recordings might be important for analysis
 - Try wavelet transformations
 - Have a look at ICU challenge data
-- Further specify research questions:
-<br />-> i.e. Can a Transformer model capture spatial information from the 12-lead ECG signals? (encoding each lead as a query -> investigate the relations among the leads)
-<br />-> i.e. Can ensemble models perform better than one big model on ECG classification (i.e. stacking of TCNN and Transformer ... SVM, LSTM)
-<br />-> notice: I will further specify/finalize the research questions during my current reading through the papers and my experiments
-<br />->  Recap of research questions:
-(notes from last meeting: question 2 is partly covered in 1 and needs to be reformulated)
+- Further specify research questions
+- Question 2 is partly covered in 1 and needs to be reformulated.
+#### Recap of research questions:
 1. How to design and improve the Transformer architecture to enable transfer learning or fine-tuning for different ECG tasks and datasets monitored through different systems, number of leads, sample rates, durations and noise filters, with the focus on AF related beat classification?
 2. How to design the encoding layer of the Transformer model for ECG AF classification and how does the Transformer perform compared to a Transformer trained on extracted features from the signal?
 3. How well can a decoder-only Transformer-based approach predicts the next AF episode?
 4. How well do the Transformer model perform on long-term ECGs?
 5. Can the Transformer model achieve 90%< accuracy on the PhysioNet 2017 challenge?
+<br />New research questions proposals:
+-> i.e. Can a Transformer model capture spatial information from the 12-lead ECG signals? (encoding each lead as a query -> investigate the relations among the leads)
+-> i.e. Can ensemble models perform better than one big model on ECG classification (i.e. stacking of TCNN and Transformer ... SVM, LSTM)
+-> notice: I will further specify/finalize the research questions in the next days and during my experiments with regard to research
 
 #### Next-steps-planned:
 -> Repostiory will be configured under private (I need your Github accounts to add you as contributors) (or optional: UM gitlab repository)
 <br />-> Training of the baseline Residual CNN model on UM data. ((no ECG folders "Export" 1 & 2 found, can not access them yet -> I need access to the ECG folders "Export" 1 & 2)
-<br />-> Further investigate all collected papers on ECG Transformer models (see proposal src/Research/Research_Readme.md) with focus on different approaches, identify/speficy limitations/weaknesses (research questions may be further specified during this step)
+<br />-> Further investigate all collected papers on ECG Transformer models (see proposal src/Research/Research_Readme.md) with focus on different approaches, identify/speficy limitations/weaknesses (research questions will be further specified during this step)
 <br />-> Model adaption using Transformer encoder-based blocks and also train a baseline Temporal Convolutional network -> build solution models with PyTorch instead Keras 
 <br />-> Investigatation of interesting library for deep learning forecasting, called "Darts", collects bunch of models, i.e. TCNN and Transformer models for timeseries forecasting: https://github.com/unit8co/darts
 <br />-> Investigatation and implementation of different feature extraction methods, i.e. filters and wavelet transformations, an interesting work here on spectograms is: https://github.com/awerdich/physionet
-<br />-> Implementation of hyperparameter tuning, cross-validation and different measure metrics (i.e. F1 score, Precision, Recall) for evaluation
+<br />-> Implementation of hyperparameter tuning, cross-validation and other measure metrics (i.e. F1 score, Precision, Recall) for evaluation
 <br />-> Work on thesis writing: create model/metrics plots and write down (research) findings so far
 <br />-> Possible more data collection on Atrial Fibrillation vs. Atrial Flutter databases, a paper here: https://www.medrxiv.org/content/10.1101/2023.08.08.23293815v1.full
 <br />-> Investigation of ECG data augmentation techniques
