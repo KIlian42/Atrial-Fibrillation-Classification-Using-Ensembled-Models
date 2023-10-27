@@ -2,6 +2,8 @@
 
 Please go to section [Setup](#Setup) for an installation guide to run this repository.
 
+![attention-output](https://github.com/KIlian42/Atrial-Fibrillation-Classification-using-Transformer-models/assets/57774167/779fef64-64a3-47b3-b908-c7e98fd013bf)
+
 ## Progress update
 
 Kilian's Master Thesis: "Single-lead ECG classification based on Transformer models" (2023-2024).
