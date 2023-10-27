@@ -1,8 +1,6 @@
-# Research.md
-
-This readme contains a list of papers, which has been researched and are commented for this master thesis project.
-
 # Papers
+
+This readme contains a list of papers, which has been researched, investigated and are documented for this master thesis project.
 
 ## Transformer-based ECG classification papers 
 
