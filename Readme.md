@@ -48,7 +48,7 @@ This readme shows Kilian's master thesis progress updates each two weeks.
 8. Possible more data collection on Atrial Fibrillation vs. Atrial Flutter databases, a paper here: https://www.medrxiv.org/content/10.1101/2023.08.08.23293815v1.full
 9. Investigation of ECG data augmentation techniques
 10. Investigation of interesting library for deep learning forecasting, called "Darts", collects bunch of models, i.e. TCNN and Transformer models for timeseries forecasting: https://github.com/unit8co/darts
-11. (Optional, if needed) Prepare training script with CUDA enabled to pre-train best model (parameter settings/input choice) using Google Colab with a larger A100 GPU -> to later fine-tune it on UM data using the UM cluster (if accessible)
+11. (Optional, if needed) Prepare training script with CUDA enabled to pre-train best models using Google Colab (or (using the UM cluster if accessible) with a larger A100 GPU -> to later fine-tune models on UM data
 
 ## Progress update (old)
 
