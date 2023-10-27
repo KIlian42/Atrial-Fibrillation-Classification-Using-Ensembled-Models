@@ -13,7 +13,7 @@ This readme shows Kilian's master thesis progress updates each two weeks.
 1. Trained a baseline Residual CNN model on Physionet 2017 with 82% validation accuracy.
 2. Trained a baseline Residual CNN model on Physionet 2020 (sinus, fibrillation, flutter) with 90% validation accuracy.
 <br />-> for current results see plots in src/Implementation/v3/results
-3. Accessed and settep up UM data (no ECG folders found, can not access them)
+3. Accessed and setted up UM data (no ECG folders "Export" 1 & 2 found, can not access them yet)
 4. Did some further research (see planning), updated papers in src/Research/Research_Readme.md and currently investigating them closer 
 5. Notes from last meeting:
 - Setup UM Gitlab Repository for this project
@@ -25,8 +25,8 @@ This readme shows Kilian's master thesis progress updates each two weeks.
 - Further specify research questions:
 <br />-> i.e. Can a Transformer model capture spatial information from the 12-lead ECG signals? (encoding each lead as a query -> investigate the relations among the leads)
 <br />-> i.e. Can ensemble models perform better than one big model on ECG classification (i.e. stacking of TCNN and Transformer ... SVM, LSTM)
-<br />-> notice: I will further specify/finalize the research questions during my current reading through the papers and my model design
-<br />Recap Research questions so far (question 2 is partly covered in 1 -> needs to be reformulated):
+<br />-> notice: I will further specify/finalize the research questions during my current reading through the papers and my experiments
+<br />Recap of Research questions (notes from last meeting: question 2 is partly covered in 1 -> needs to be reformulated):
 1. How to design and improve the Transformer architecture to enable transfer learning or fine-tuning for different ECG tasks and datasets monitored through different systems, number of leads, sample rates, durations and noise filters, with the focus on AF related beat classification?
 2. How to design the encoding layer of the Transformer model for ECG AF classification and how does the Transformer perform compared to a Transformer trained on extracted features from the signal?
 3. How well can a decoder-only Transformer-based approach predicts the next AF episode?
