@@ -16,7 +16,7 @@ This readme shows Kilian's master thesis progress updates each two weeks.
 2. Trained a baseline Residual CNN (same) model on Physionet 2020 (sinus, fibrillation, flutter) with 90% validation accuracy
 -> for current results see plots in src/Implementation/v3/results 
 3. Accessed and setted up UM VPN
-4. Some research (see links/libraries in [Next-steps-planned](#Next-steps-planned) section) and added papers about Transformer models (see list of papers in src/Research/Research_Readme.md) -> I currently still investigate the papers to get a detailed overview of Transformer-based implementation approaches and to identify limitations 
+4. Some research (see links/libraries in [Next-steps-planned](#Next-steps-planned) section) and added papers about Transformer models (see list of papers in src/Research/Research_Readme.md) -> I currently still investigate the papers to get a detailed overview of Transformer-based implementation approaches to identify limitations 
 #### Notes from last meeting
 - Use PyTorch instead Keras 
 - Split data (training/validation/test) by patients not recordings
@@ -40,7 +40,7 @@ This readme shows Kilian's master thesis progress updates each two weeks.
 #### Next-steps-planned:
 1. Repostiory will be configured under private (I need your Github accounts to add you as contributors or optional we might set up an UM Gitlab repository) -> final models might be uploaded in a separate private Google Drive if sizes are too large
 2. Training of the baseline Residual CNN model on UM data. (no folders "Export" 1 & 2 with ECG found, can not access them yet)
-3. Continue reading of the collected papers (see src/Research/Research_Readme.md) on ECG Transformer models with focus on different approaches to identify limitations/weaknesses (research question 1 & 2 will be further specified during this step)
+3. Continue reading of the collected papers (see src/Research/Research_Readme.md) on ECG Transformer models with focus on different approaches and limitations/weaknesses (research question 1 & 2 will be further specified during this step)
 4. Adapt baseline model using Transformer encoder-based blocks and also train a baseline Temporal Convolutional network -> build solution models with PyTorch instead Keras 
 5. Investigation and implementation of different feature extraction methods, i.e. filters and wavelet transformations, an interesting work here on spectograms is: https://github.com/awerdich/physionet
 6. Implementation of data balancing, cross-validation, hyperparameter tuning and other evaluation metrics (i.e. F1 score, Precision, Recall) for evaluation
