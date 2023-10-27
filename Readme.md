@@ -38,7 +38,7 @@ This readme shows Kilian's master thesis progress updates each two weeks.
 <br />-> notice: I will further specify/finalize the research questions in the next days and during my experiments with regard to related research limitations
 
 #### Next-steps-planned:
-1. Repostiory will be configured under private (I need your Github accounts to add you as contributors or optional we might set up an UM Gitlab repository) -> however final models will be likeli uploaded in a separate private Google Drive
+1. Repostiory will be configured under private (I need your Github accounts to add you as contributors or optional we might set up an UM Gitlab repository) -> final models might be uploaded in a separate private Google Drive if sizes are too large
 2. Training of the baseline Residual CNN model on UM data. (no folders "Export" 1 & 2 with ECG found, can not access them yet)
 3. Closer investigate the collected papers on ECG Transformer models (see proposal src/Research/Research_Readme.md) with focus on different approaches and identify limitations/weaknesses (research questions will be further specified during this step)
 4. Model adaption using Transformer encoder-based blocks and also train a baseline Temporal Convolutional network -> build solution models with PyTorch instead Keras 
