@@ -14,8 +14,8 @@ This readme shows Kilian's master thesis progress updates each two weeks.
 2. Trained a baseline Residual CNN model on Physionet 2020 (sinus, fibrillation, flutter) with 90% validation accuracy.
 <br />-> for current results see plots in src/Implementation/v3/results
 3. Accessed and settep up UM data (no ECG folders found, can not access them)
-4. Updated src/Research/Research_Readme.md and currently investigating them closer
-<br />Notices from last meeting:
+4. Did some further research (see planning), updated papers in src/Research/Research_Readme.md and currently investigating them closer 
+5. Notes from last meeting:
 - Setup UM Gitlab Repository for this project
 - Split data (training/tests) by patients
 - Take care of sampling rate (i.e. microvolt vs milivolt sample rates)
