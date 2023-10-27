@@ -10,12 +10,14 @@ This readme shows Kilian's master thesis progress updates each two weeks.
 
 ### 14th October - 27th October
 
+#### Progress
+
 1. Trained a baseline Residual CNN model on Physionet 2017 with 82% validation accuracy.
 2. Trained a baseline Residual CNN model on Physionet 2020 (sinus, fibrillation, flutter) with 90% validation accuracy.
-<br />-> for current results see plots in src/Implementation/v3/results (notes: Physionet 2020 Start with 90% val accuracy and does not improve)
-3. Accessed and setted up UM data (no ECG folders "Export" 1 & 2 found, can not access them yet)
-4. Did some further research (see [Next-steps-planned](####Next-steps-planned)) and papers (see list of papers in src/Research/Research_Readme.md) and currently investigating them closer to identify limitations 
-5. Notes from last meeting:
+-> for current results see plots in src/Implementation/v3/results (notes: Physionet 2020 Start with 90% val accuracy and does not improve)
+3. Accessed and setted up UM data
+4. Further research (see [Next-steps-planned](#Next-steps-planned)) and added papers about Transformer models (see list of papers in src/Research/Research_Readme.md) and currently investigating them closer to identify limitations 
+#### Notes from last meeting
 - (Optional: Setup UM Gitlab Repository for this project)
 - use PyTorch instead Keras 
 - Split data (training/tests) by patients
@@ -27,7 +29,8 @@ This readme shows Kilian's master thesis progress updates each two weeks.
 <br />-> i.e. Can a Transformer model capture spatial information from the 12-lead ECG signals? (encoding each lead as a query -> investigate the relations among the leads)
 <br />-> i.e. Can ensemble models perform better than one big model on ECG classification (i.e. stacking of TCNN and Transformer ... SVM, LSTM)
 <br />-> notice: I will further specify/finalize the research questions during my current reading through the papers and my experiments
-<br />Recap of Research questions (notes from last meeting: question 2 is partly covered in 1 -> needs to be reformulated):
+<br />->  Recap of research questions:
+(notes from last meeting: question 2 is partly covered in 1 and needs to be reformulated)
 1. How to design and improve the Transformer architecture to enable transfer learning or fine-tuning for different ECG tasks and datasets monitored through different systems, number of leads, sample rates, durations and noise filters, with the focus on AF related beat classification?
 2. How to design the encoding layer of the Transformer model for ECG AF classification and how does the Transformer perform compared to a Transformer trained on extracted features from the signal?
 3. How well can a decoder-only Transformer-based approach predicts the next AF episode?
@@ -35,8 +38,8 @@ This readme shows Kilian's master thesis progress updates each two weeks.
 5. Can the Transformer model achieve 90%< accuracy on the PhysioNet 2017 challenge?
 
 #### Next-steps-planned:
--> Repostiory will be configured under private. (I need your Github accounts to add you as contributors)
-<br />-> Training of the baseline Residual CNN model on UM data. (I need access to the ECG folders "Export" 1 & 2)
+-> Repostiory will be configured under private (I need your Github accounts to add you as contributors) (or optional: UM gitlab repository)
+<br />-> Training of the baseline Residual CNN model on UM data. ((no ECG folders "Export" 1 & 2 found, can not access them yet -> I need access to the ECG folders "Export" 1 & 2)
 <br />-> Further investigate all collected papers on ECG Transformer models (see proposal src/Research/Research_Readme.md) with focus on different approaches, identify/speficy limitations/weaknesses (research questions may be further specified during this step)
 <br />-> Model adaption using Transformer encoder-based blocks and also train a baseline Temporal Convolutional network -> build solution models with PyTorch instead Keras 
 <br />-> Investigatation of interesting library for deep learning forecasting, called "Darts", collects bunch of models, i.e. TCNN and Transformer models for timeseries forecasting: https://github.com/unit8co/darts
