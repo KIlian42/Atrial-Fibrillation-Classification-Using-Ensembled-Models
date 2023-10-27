@@ -43,7 +43,7 @@ This readme shows Kilian's master thesis progress updates each two weeks.
 3. Continue reading of the collected papers (see src/Research/Research_Readme.md) on ECG Transformer models with focus on different approaches to identify limitations/weaknesses (research question 1 & 2 will be further specified during this step)
 4. Adapt baseline model using Transformer encoder-based blocks and also train a baseline Temporal Convolutional network -> build solution models with PyTorch instead Keras 
 5. Investigation and implementation of different feature extraction methods, i.e. filters and wavelet transformations, an interesting work here on spectograms is: https://github.com/awerdich/physionet
-6. Implementation of data balancing, hyperparameter tuning, cross-validation and other measure metrics (i.e. F1 score, Precision, Recall) for evaluation
+6. Implementation of data balancing, cross-validation, hyperparameter tuning and other evaluation metrics (i.e. F1 score, Precision, Recall) for evaluation
 7. Work on **thesis writing**: create model/metrics plots and write down (research) findings so far
 8. Possible more data collection on Atrial Fibrillation vs. Atrial Flutter databases, a paper here: https://www.medrxiv.org/content/10.1101/2023.08.08.23293815v1.full
 9. Investigation of ECG data augmentation techniques
