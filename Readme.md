@@ -12,8 +12,8 @@ This readme shows Kilian's master thesis progress updates each two weeks.
 
 #### Progress
 
-1. Trained a baseline Residual CNN model on Physionet 2017 with 82% validation accuracy.
-2. Trained a baseline Residual CNN model on Physionet 2020 (sinus, fibrillation, flutter) with 90% validation accuracy.
+1. Trained a baseline Residual CNN model on Physionet 2017 with 82% validation accuracy
+2. Trained a baseline Residual CNN model on Physionet 2020 (sinus, fibrillation, flutter) with 90% validation accuracy
 -> for current results see plots in src/Implementation/v3/results 
 3. Accessed and setted up UM VPN
 4. Some research (see links/libraries in [Next-steps-planned](#Next-steps-planned) section) and added papers about Transformer models (see list of papers in src/Research/Research_Readme.md) and currently investigating them closer to identify limitations 
@@ -40,7 +40,7 @@ This readme shows Kilian's master thesis progress updates each two weeks.
 #### Next-steps-planned:
 1. Repostiory will be configured under private (I need your Github accounts to add you as contributors or optional UM Gitlab repository)
 2. Training of the baseline Residual CNN model on UM data. (no folders "Export" 1 & 2 with ECG found, can not access them yet)
-3. Closely investigate the collected papers on ECG Transformer models (see proposal src/Research/Research_Readme.md) with focus on different approaches, identify/speficy limitations/weaknesses (research questions will be further specified during this step)
+3. Closer investigate the collected papers on ECG Transformer models (see proposal src/Research/Research_Readme.md) with focus on different approaches and identify limitations/weaknesses (research questions will be further specified during this step)
 4. Model adaption using Transformer encoder-based blocks and also train a baseline Temporal Convolutional network -> build solution models with PyTorch instead Keras 
 5. Investigation of interesting library for deep learning forecasting, called "Darts", collects bunch of models, i.e. TCNN and Transformer models for timeseries forecasting: https://github.com/unit8co/darts
 6. Investigation and implementation of different feature extraction methods, i.e. filters and wavelet transformations, an interesting work here on spectograms is: https://github.com/awerdich/physionet
