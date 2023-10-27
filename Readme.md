@@ -14,19 +14,18 @@ This readme shows Kilian's master thesis progress updates each two weeks.
 
 1. Trained a baseline Residual CNN model on Physionet 2017 with 82% validation accuracy.
 2. Trained a baseline Residual CNN model on Physionet 2020 (sinus, fibrillation, flutter) with 90% validation accuracy.
--> for current results see plots in src/Implementation/v3/results (notes: Physionet 2020 Start with 90% val accuracy and does not improve)
-3. Accessed and setted up UM data
+-> for current results see plots in src/Implementation/v3/results 
+3. Accessed and setted up UM VPN
 4. Further research (see [Next-steps-planned](#Next-steps-planned)) and added papers about Transformer models (see list of papers in src/Research/Research_Readme.md) and currently investigating them closer to identify limitations 
 #### Notes from last meeting
-- (Optional: Setup UM Gitlab Repository for this project)
 - use PyTorch instead Keras 
 - Split data (training/tests) by patients
 - Take care of sampling rate (i.e. microvolt vs milivolt sample rates)
 - Consecutive order of recordings might be important for analysis
 - Try wavelet transformations
 - Have a look at ICU challenge data
-- Further specify research questions
-- Question 2 is partly covered in 1 and needs to be reformulated.
+- Further specify research questions (also question 2 is partly covered in 1 and needs to be reformulated)
+- (Optional: Set up an UM Gitlab repository for this project)
 #### Recap of research questions:
 1. How to design and improve the Transformer architecture to enable transfer learning or fine-tuning for different ECG tasks and datasets monitored through different systems, number of leads, sample rates, durations and noise filters, with the focus on AF related beat classification?
 2. How to design the encoding layer of the Transformer model for ECG AF classification and how does the Transformer perform compared to a Transformer trained on extracted features from the signal?
@@ -39,9 +38,9 @@ This readme shows Kilian's master thesis progress updates each two weeks.
 -> notice: I will further specify/finalize the research questions in the next days and during my experiments with regard to research
 
 #### Next-steps-planned:
--> Repostiory will be configured under private (I need your Github accounts to add you as contributors) (or optional: UM gitlab repository)
-<br />-> Training of the baseline Residual CNN model on UM data. ((no ECG folders "Export" 1 & 2 found, can not access them yet -> I need access to the ECG folders "Export" 1 & 2)
-<br />-> Further investigate all collected papers on ECG Transformer models (see proposal src/Research/Research_Readme.md) with focus on different approaches, identify/speficy limitations/weaknesses (research questions will be further specified during this step)
+-> Repostiory will be configured under private (I need your Github accounts to add you as contributors or optional UM Gitlab repository)
+<br />-> Training of the baseline Residual CNN model on UM data. (no folders "Export" 1 & 2 with ECG found, can not access them yet)
+<br />-> Closely investigate the collected papers on ECG Transformer models (see proposal src/Research/Research_Readme.md) with focus on different approaches, identify/speficy limitations/weaknesses (research questions will be further specified during this step)
 <br />-> Model adaption using Transformer encoder-based blocks and also train a baseline Temporal Convolutional network -> build solution models with PyTorch instead Keras 
 <br />-> Investigatation of interesting library for deep learning forecasting, called "Darts", collects bunch of models, i.e. TCNN and Transformer models for timeseries forecasting: https://github.com/unit8co/darts
 <br />-> Investigatation and implementation of different feature extraction methods, i.e. filters and wavelet transformations, an interesting work here on spectograms is: https://github.com/awerdich/physionet
