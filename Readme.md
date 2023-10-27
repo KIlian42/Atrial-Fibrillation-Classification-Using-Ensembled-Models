@@ -19,7 +19,7 @@ This readme shows Kilian's master thesis progress updates each two weeks.
 4. Some research (see links/libraries in [Next-steps-planned](#Next-steps-planned) section) and added papers about Transformer models (see list of papers in src/Research/Research_Readme.md) -> I currently still investigate the papers to get an overview of Transformer-based implementation approaches in detail and to identify limitations 
 #### Notes from last meeting
 - Use PyTorch instead Keras 
-- Split data (training/tests) by patients
+- Split data (training/validation/test) by patients not recordings
 - Take care of sampling rate (i.e. microvolt vs. milivolt sample rates)
 - Consecutive order of recordings might be important for analysis
 - Try wavelet transformations
