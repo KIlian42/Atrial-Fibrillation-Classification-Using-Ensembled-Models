@@ -12,7 +12,7 @@ This readme shows Kilian's master thesis progress updates each two weeks.
 
 1. Trained a baseline Residual CNN model on Physionet 2017 with 82% validation accuracy.
 2. Trained a baseline Residual CNN model on Physionet 2020 (sinus, fibrillation, flutter) with 90% validation accuracy.
-<br />-> for current results see plots in src/Implementation/v3/results
+<br />-> for current results see plots in src/Implementation/v3/results (notes: Physionet 2020 Start with 90% val accuracy and does not improve)
 3. Accessed and setted up UM data (no ECG folders "Export" 1 & 2 found, can not access them yet)
 4. Did some further research (see planning), updated papers in src/Research/Research_Readme.md and currently investigating them closer 
 5. Notes from last meeting:
@@ -34,7 +34,7 @@ This readme shows Kilian's master thesis progress updates each two weeks.
 5. Can the Transformer model achieve 90%< accuracy on the PhysioNet 2017 challenge?
 
 #### Next steps planned:
--> Repostiory will be configured under private. (need of your Github accounts to add contributors)
+-> Repostiory will be configured under private. (I need your Github accounts to add you as contributors)
 <br />-> Training of the baseline Residual CNN model on UM data.
 <br />-> Further investigate all collected papers on ECG Transformer models (see proposal src/Research/Research_Readme.md) with focus on different approaches, identify/speficy limitations/weaknesses (research questions may be further specified during this step)
 <br />-> Model adaption using Transformer encoder-based blocks and also train a baseline Temporal Convolutional network -> build solution models with PyTorch instead Keras 
