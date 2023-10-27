@@ -44,7 +44,7 @@ This readme shows Kilian's master thesis progress updates each two weeks.
 4. Model adaption using Transformer encoder-based blocks and also train a baseline Temporal Convolutional network -> build solution models with PyTorch instead Keras 
 5. Investigation of interesting library for deep learning forecasting, called "Darts", collects bunch of models, i.e. TCNN and Transformer models for timeseries forecasting: https://github.com/unit8co/darts
 6. Investigation and implementation of different feature extraction methods, i.e. filters and wavelet transformations, an interesting work here on spectograms is: https://github.com/awerdich/physionet
-7. Implementation of hyperparameter tuning, cross-validation and other measure metrics (i.e. F1 score, Precision, Recall) for evaluation and balance data
+7. Implementation of data balancing, hyperparameter tuning, cross-validation and other measure metrics (i.e. F1 score, Precision, Recall) for evaluation
 8. Work on **thesis writing**: create model/metrics plots and write down (research) findings so far
 9. Possible more data collection on Atrial Fibrillation vs. Atrial Flutter databases, a paper here: https://www.medrxiv.org/content/10.1101/2023.08.08.23293815v1.full
 10. Investigation of ECG data augmentation techniques
