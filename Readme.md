@@ -1,6 +1,6 @@
 # Readme.md
 
-Hi Researchers, 
+Dear Researchers, 
 
 this repository shows research and code (Python) from my master thesis. (2023-2024)
 
@@ -17,7 +17,7 @@ https://drive.google.com/drive/folders/1e0LygPzn5tM9i2m2leXFwSs5J5og97W5
 
 About the data:
 
-Each ECG in the .h5 is stored as key (str): "PATIENT-ID" and value: 12-lead ECG (list[list]), where each ECG has 12-leads (12 lists) and each lead/list is paddded/truncated to 5000 samples (10 second long ECGs with 500Hz sampling rate). Notice that in the Google Drive is also the Physionet 2017 challenge data (but the Physionet 2017 labels only distinguish between Sinus Rhythm, Atrial Fibrillation, Noise and Other, where the Physionet 2021 challenge distinguishes between more than 100 arrythmia types) and in the  directory "prepared" are further prepared datasets, since this thesis focuses particularly on the arrythmia types Sinus Rhythm (SR), Atrial Fibrilliation (AF), Atrial Flutter (AFL), Premature Atrial Contraction (PAC) and Premature Ventricular Contractions (PVC).
+Each ECG in the .h5 is stored as key (str): "PATIENT-ID" and value: 12-lead ECG (list[12 lists]), where each ECG has 12-leads and each lead is paddded/truncated to 5000 samples (10 second long ECGs with 500Hz sampling rate). Notice, that in my Google Drive is also the Physionet 2017 challenge data available and in the  directory "prepared" are further prepared datasets, since this thesis focuses particularly on the arrythmia types Sinus Rhythm (SR), Atrial Fibrilliation (AF), Atrial Flutter (AFL), Premature Atrial Contraction (PAC) and Premature Ventricular Contractions (PVC). Although the Physionet 2017 labels only distinguish between Sinus Rhythm, Atrial Fibrillation, Noise and Other, where on the other side the Physionet 2021 labels distinguish between more than 100 arrythmia types.
 
 Please go to section [Setup](#Setup) for an installation guide to run this repository.
 
