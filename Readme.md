@@ -2,15 +2,15 @@
 
 Hi Researchers, 
 
-this repository shows research and code from my master thesis. (2023-2024)
+this repository shows research and code (Python) from my master thesis. (2023-2024)
 
-Master Thesis Title: "Electrocardiogram (ECG) classification using ensembled models (feature-based and deeplearning)."
+Master Thesis Title: "Atrial Fibrillation classification using ensembled models (feature-based and deeplearning)."
 
-The research utilizes the Physionet 2021 challenge data (https://physionet.org/content/challenge-2021/1.0.3/#files).
+The research utilizes the electrocardiogram (ECG) data from the Physionet 2021 challenge: https://physionet.org/content/challenge-2021/1.0.3/#files.
 
 # Start
 
-You can directly download the Physionet 2021 challenge data from their homepage https://physionet.org/content/challenge-2021/1.0.3/#files, or you might have look at my drive, where I wrapped all the ECG files in a single .h5 file: https://drive.google.com/drive/folders/1L_gOMrkygu2N0k97COYuVrmE-AwEEMoQ?usp=sharing. Each ECG is stored as "ID": ECG padded/truncated to 5000 samples (10 second long ECGs, 500 Hz sampling rate). 
+You can directly download the challenge data from Physionet 2021 homepage: https://physionet.org/content/challenge-2021/1.0.3/#files, or you might have look at my Google Drive, where I wrapped all the ECG files in a single .h5 (key-values) file: https://drive.google.com/drive/folders/1L_gOMrkygu2N0k97COYuVrmE-AwEEMoQ?usp=sharing (download ). Each ECG is stored as key (str): "PATIENT-ID" and value: 12-lead ECG (list[list]), where each ECG has 12-lead (12 lists) and each lead/list is 5000 samples long (10 second long ECGs with 500 Hz sampling rate). Notice that in the Google Drive are further datasets (i.e. .json), since this thesis focused particularly on the arrythmia types Sinus Rhythm (SR), Atrial Fibrilliation (AF), Atrial Flutter (AFL), Premature Atrial Contraction (PAC), and Premature Ventricular Contractions (PVC).
 
 Please go to section [Setup](#Setup) for an installation guide to run this repository.
 
@@ -21,9 +21,7 @@ Please go to section [Setup](#Setup) for an installation guide to run this repos
 If not done yet,
 
 1. ... install Git: https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
-<br />
 2. ... install Python 3.11: https://www.python.org/downloads/
-<br />
 3. ... install Pip (Package Installer Python): https://pip.pypa.io/en/stable/installation/
 
 #### Installation
