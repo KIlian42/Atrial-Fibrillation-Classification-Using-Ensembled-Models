@@ -1,8 +1,6 @@
 # Atrial Fibrillation classification using ensembled models
 
-Dear Researchers, 
-
-this repository shows research and code (Python) from my master thesis. (2023-2024)
+This repository shows the research and code (Python) from my master thesis. (2023-2024)
 
 Title: "Atrial Fibrillation classification using ensembled models" (feature-based and deep-learning models)
 
