@@ -13,11 +13,11 @@ The research utilizes electrocardiogram (ECG) data from the Physionet 2021 chall
 You can directly download the challenge data from the Physionet 2021 homepage: https://physionet.org/content/challenge-2021/1.0.3/#files,
 or you might have look at my Google Drive, where I wrapped all the ECG files in a single .h5 (key-values) file:
 https://drive.google.com/drive/folders/1e0LygPzn5tM9i2m2leXFwSs5J5og97W5
-(do download physionet2021.h5 and physionet2021_references.csv (labels)).
+(do download physionet2021.h5, physionet2021_references.csv (labels) and codes_SNOMED.csv).
 
 About the data:
 
-Each ECG in physionet2021.h5 is stored as key (str): "PATIENT-ID" and value: 12-lead ECG (list[12 lists]), where each ECG has 12-leads and each lead is paddded/truncated to 5000 samples (10 second long ECGs with 500Hz sampling rate). Notice, in my Google Drive is also the Physionet 2017 challenge data available and in the  directory "prepared" are further prepared datasets, since this thesis focuses particularly on the arrythmia types Sinus Rhythm (SR), Atrial Fibrilliation (AF), Atrial Flutter (AFL), Premature Atrial Contraction (PAC) and Premature Ventricular Contractions (PVC). Although, the Physionet 2017 labels do only distinguish between Sinus Rhythm, Atrial Fibrillation, Noise and Other, where on the other hand the Physionet 2021 labels distinguish between more than 100 known arrythmia types.
+Each ECG in physionet2021.h5 is stored as key (str): "PATIENT-ID" and value: 12-lead ECG (list[12 lists]), where each ECG has 12-leads and each lead is paddded/truncated to 5000 samples (10 second long ECGs with 500Hz sampling rate). The ECGs can have multiple labels, see Physionet2021_references.csv. The correspoding disease names are in the codes_SNOMED.csv. Notice, in my Google Drive is also the Physionet 2017 challenge data available and in the  directory "prepared" are further prepared datasets, since this thesis focuses particularly on the arrythmia types Sinus Rhythm (SR), Atrial Fibrilliation (AF), Atrial Flutter (AFL), Premature Atrial Contraction (PAC) and Premature Ventricular Contractions (PVC). Although, the Physionet 2017 labels do only distinguish between Sinus Rhythm, Atrial Fibrillation, Noise and Other, where on the other hand the Physionet 2021 labels distinguish between more than 100 known arrythmia types. 
 
 Please go to section [Setup](#Setup) for an installation guide to run this repository.
 
