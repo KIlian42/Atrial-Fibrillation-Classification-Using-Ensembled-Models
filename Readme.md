@@ -6,7 +6,7 @@ this repository shows research and code (Python) from my master thesis. (2023-20
 
 Title: "Atrial Fibrillation classification using ensembled models." (feature-based and deep-learning models)
 
-The research utilizes the electrocardiogram (ECG) data from the Physionet 2021 challenge: https://physionet.org/content/challenge-2021/1.0.3/#files.
+The research utilizes electrocardiogram (ECG) data from the Physionet 2021 challenge: https://physionet.org/content/challenge-2021/1.0.3/#files.
 
 # Start
 
