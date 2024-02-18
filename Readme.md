@@ -40,11 +40,11 @@ If not done yet, install
 
 3. Clone repository
 ```
-git clone https://github.com/KIlian42/Atrial-Fibrillation-Classification-using-Transformer-models.git
+git clone https://github.com/KIlian42/Atrial-Fibrillation-Classification-Using-Ensembled-Models.git
 ```
 4. Change directory
 ```
-cd Atrial-Fibrillation-Classification-using-Transformer-models
+cd Atrial-Fibrillation-Classification-Using-Ensembled-Models
 ```
 5. Install library to create virtual environments
 ```
