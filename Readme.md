@@ -22,6 +22,7 @@ Each ECG in the .h5 is stored as key (str): "PATIENT-ID" and value: 12-lead ECG 
 Please go to section [Setup](#Setup) for an installation guide to run this repository.
 
 <img width="700" alt="https://en.wikipedia.org/wiki/Electrocardiography" src="https://github.com/KIlian42/Atrial-Fibrillation-Classification-Using-Ensembled-Models/assets/57774167/1a2b2533-3aae-4876-8f32-2c24ce4cc90e">
+Source: https://en.wikipedia.org/wiki/Electrocardiography
 
 # Setup
 
