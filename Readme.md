@@ -21,7 +21,7 @@ Each ECG in the .h5 is stored as key (str): "PATIENT-ID" and value: 12-lead ECG 
 
 Please go to section [Setup](#Setup) for an installation guide to run this repository.
 
-![SinusRhythmLabels svg](https://github.com/KIlian42/Atrial-Fibrillation-Classification-Using-Ensembled-Models/assets/57774167/757a5845-e984-4d1f-813b-5121c7845b6c)
+<img width="590" alt=ECG" src="https://github.com/KIlian42/Atrial-Fibrillation-Classification-Using-Ensembled-Models/assets/57774167/757a5845-e984-4d1f-813b-5121c7845b6c">
 
 # Setup
 
