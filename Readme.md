@@ -26,11 +26,11 @@ Please go to section [Setup](#Setup) for an installation guide to run this repos
 
 #### Prerequisites
 
-If not done yet,
+If not done yet, install
 
-1. ... install Git: https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
-2. ... install Python 3.11: https://www.python.org/downloads/
-3. ... install Pip (Package Installer Python): https://pip.pypa.io/en/stable/installation/
+1. ... Git: https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
+2. ... Python 3.11: https://www.python.org/downloads/
+3. ... Pip (Package Installer Python): https://pip.pypa.io/en/stable/installation/
 
 #### Installation
 
