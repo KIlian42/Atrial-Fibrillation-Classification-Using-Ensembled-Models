@@ -13,7 +13,7 @@ or you might have look at my Google Drive, where I wrapped all the ECG files in 
 https://drive.google.com/drive/folders/1e0LygPzn5tM9i2m2leXFwSs5J5og97W5
 (do download physionet2021.h5, physionet2021_references.csv (labels) and codes_SNOMED.csv).
 
-About the data:
+#### About the data
 
 Each ECG in physionet2021.h5 is stored as key (str): "PATIENT-ID" and value: 12-lead ECG (list[12 lists]), where each ECG has 12-leads and each lead is paddded/truncated to 5000 samples (10 second long ECGs with a sampling rate of 500Hz). The ECGs can have multiple labels, see Physionet2021_references.csv. The corresponding arrythmia label names are in the codes_SNOMED.csv listed. Notice, in my Google Drive is also the Physionet 2017 challenge data available and in the  directory "prepared" are further prepared datasets, since this thesis focuses particularly on the arrythmia types Sinus Rhythm (SR), Atrial Fibrilliation (AF), Atrial Flutter (AFL), Premature Atrial Contraction (PAC) and Premature Ventricular Contractions (PVC). Although, the Physionet 2017 labels do only distinguish between Sinus Rhythm, Atrial Fibrillation, Noise and Other, which might be useful for prototyping, the Physionet 2021 labels  on the other hand distinguish between more than 100 arrythmia types. 
 
