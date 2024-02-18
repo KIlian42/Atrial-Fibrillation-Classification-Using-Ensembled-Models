@@ -10,7 +10,9 @@ The research utilizes electrocardiogram (ECG) data from the Physionet 2021 chall
 
 # Start
 
-You can directly download the challenge data from the Physionet 2021 homepage: https://physionet.org/content/challenge-2021/1.0.3/#files, or you might have look at my Google Drive, where I wrapped all the ECG files in a single .h5 (key-values) file: https://drive.google.com/drive/folders/1L_gOMrkygu2N0k97COYuVrmE-AwEEMoQ?usp=sharing (download physionet2021.h5 and physionet2021_references.csv (labels)). Each ECG in the .h5 is stored as key (str): "PATIENT-ID" and value: 12-lead ECG (list[list]), where each ECG has 12-lead (12 lists) and each lead/list is paddded/truncated to 5000 samples (10 second long ECGs with a 500Hz sampling rate). Notice that in the Google Drive "prepared" folder are further datasets (i.e. .json), since this thesis focuses particularly on the arrythmia types Sinus Rhythm (SR), Atrial Fibrilliation (AF), Atrial Flutter (AFL), Premature Atrial Contraction (PAC), and Premature Ventricular Contractions (PVC).
+You can directly download the challenge data from the Physionet 2021 homepage: https://physionet.org/content/challenge-2021/1.0.3/#files,
+or you might have look at my Google Drive, where I wrapped all the ECG files in a single .h5 (key-values) file: https://drive.google.com/drive/folders/1L_gOMrkygu2N0k97COYuVrmE-AwEEMoQ?usp=sharing
+(do download physionet2021.h5 and physionet2021_references.csv (labels)). Each ECG in the .h5 is stored as key (str): "PATIENT-ID" and value: 12-lead ECG (list[list]), where each ECG has 12-lead (12 lists) and each lead/list is paddded/truncated to 5000 samples (10 second long ECGs with 500Hz sampling rate). Notice that in the Google Drive is also the Physionet 2017 challenge data and in the  directory "prepared" are further prepared datasets, since this thesis focuses particularly on the arrythmia types Sinus Rhythm (SR), Atrial Fibrilliation (AF), Atrial Flutter (AFL), Premature Atrial Contraction (PAC) and Premature Ventricular Contractions (PVC).
 
 Please go to section [Setup](#Setup) for an installation guide to run this repository.
 
