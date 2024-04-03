@@ -64,7 +64,7 @@ def main():
             fontsize=16,
         )
     plt.savefig(
-        "plots/Physionet2021_labels_SR_AF_AFL_PAC_PVC.png",
+        "Physionet2021_labels_SR_AF_AFL_PAC_PVC.png",
         format="png",
         bbox_inches="tight",
     )
