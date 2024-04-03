@@ -1,3 +1,4 @@
+# Official scored labels Physionet 2021: https://github.com/physionetchallenges/evaluation-2021/blob/main/dx_mapping_scored.csv
 SCORED_labels = set(
     [
         "164889003",
