@@ -1,19 +1,13 @@
-import h5py
 from collections import Counter
-import matplotlib.pyplot as plt
-from tqdm import tqdm
-import pandas as pd
 
-SR_AF_AFL_PAC_PVC_labels = set(
-    ["426783006", "164889003", "164890007", "284470004", "427172004"]
-)
+import matplotlib.pyplot as plt
+import pandas as pd
+from tqdm import tqdm
+from util.label_sets import SR_AF_AFL_PAC_PVC_labels
+
 
 def main():
     # # ========================================================= Load data
-    h5file = h5py.File(
-        "src/Datasets/physionet2021_SR_AF_AFL_PAC_PVC.h5", "r"
-    ) # src/Datasets/physionet2021.h src/Datasets/physionet2021_SR_AF_AFL_PAC_PVC.h5
-    ID = list(h5file.keys())
     X_dict = {}
     X = []
     Y_labels_dict = {}
@@ -36,10 +30,8 @@ def main():
                     Y_labels.append(
                         str(physionet2021_labels[label]) + " (" + str(label) + ")"
                     )
-            except:
+            except IndexError:
                 pass
-
-
 
     # == Plot data ==
     label_counts = Counter(Y_labels)
@@ -51,28 +43,34 @@ def main():
     label_values = list(label_values)
 
     for index, key in enumerate(label_keys):
-        label_keys[index] = str(index+1) + ". " + key[0].upper() + key[1:]
+        label_keys[index] = str(index + 1) + ". " + key[0].upper() + key[1:]
 
     plt.figure(figsize=(30, 10))
-    plt.bar(label_keys, label_values, color='#1f77b4')
+    plt.bar(label_keys, label_values, color="#1f77b4")
     plt.title("Physionet 2021 labels")
     plt.xlabel("Arrhythmia type", labelpad=7)
     plt.ylabel("Occurence")
     plt.xticks(rotation=45, ha="right", fontsize=16)  # (rotation='diagional')
-    bars = plt.bar(label_keys, label_values, color='#1f77b4')
+    bars = plt.bar(label_keys, label_values, color="#1f77b4")
     # Adding the counts on top of the bars
     for bar in bars:
         yval = bar.get_height()
         plt.text(
-            bar.get_x() + bar.get_width() / 2, yval + 5, yval, ha="center", va="bottom", fontsize=16
+            bar.get_x() + bar.get_width() / 2,
+            yval + 5,
+            yval,
+            ha="center",
+            va="bottom",
+            fontsize=16,
         )
     plt.savefig(
-        "/Users/kiliankramer/Desktop/UM_ECGs_labels.png",
+        "plots/Physionet2021_labels_SR_AF_AFL_PAC_PVC.png",
         format="png",
         bbox_inches="tight",
     )
     # plt.show()
     plt.close()
+
 
 if __name__ == "__main__":
     main()
