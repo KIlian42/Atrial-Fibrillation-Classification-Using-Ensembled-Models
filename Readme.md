@@ -9,7 +9,7 @@ The research utilizes electrocardiogram (ECG) data from the Physionet 2021 chall
 # Start
 
 You can directly download the challenge data from the Physionet 2021 homepage: https://physionet.org/content/challenge-2021/1.0.3/#files,
-or you might have look at my Google Drive, where I wrapped all the ECG files in a single .h5 (key-value) file:
+or you might have a look at my Google Drive, where I wrapped all the ECG files in a single .h5 (key-value) file:
 https://drive.google.com/drive/folders/1e0LygPzn5tM9i2m2leXFwSs5J5og97W5 -> do download physionet2021.h5, physionet2021_references.csv (labels) and codes_SNOMED.csv.
 
 #### About the data
