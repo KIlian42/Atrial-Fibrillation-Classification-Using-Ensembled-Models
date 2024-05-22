@@ -7,7 +7,7 @@ from util.label_sets import SR_AF_AFL_PAC_PVC_labels
 
 
 def main():
-    # # ========================================================= Load data
+    # == Load data ==
     X_dict = {}
     X = []
     Y_labels_dict = {}

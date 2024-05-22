@@ -1,20 +1,44 @@
 import numpy as np
 import tensorflow as tf
-from keras.layers import Input, MultiHeadAttention, Conv1D, Conv2D, BatchNormalization, SpatialDropout1D, SpatialDropout2D, AveragePooling1D, AveragePooling2D, GlobalAveragePooling1D, Reshape, Flatten, Dense, Masking, Lambda, LayerNormalization, Add, Dropout, GRU
+from keras.layers import (
+    Input,
+    MultiHeadAttention,
+    Conv1D,
+    Conv2D,
+    BatchNormalization,
+    SpatialDropout1D,
+    SpatialDropout2D,
+    AveragePooling1D,
+    AveragePooling2D,
+    GlobalAveragePooling1D,
+    Reshape,
+    Flatten,
+    Dense,
+    Masking,
+    Lambda,
+    LayerNormalization,
+    Add,
+    Dropout,
+    GRU,
+)
 from keras.models import Model
 from keras.activations import sigmoid, relu, leaky_relu, gelu
 import keras.backend as K
+
 
 # 1-lead CNN + Transformer
 def build_model_CNN_Transformer_1lead_simple(input_shape, num_classes):
     input_layer = Input(input_shape)
     # Encoder block/Attention mechanisms
-    i = MultiHeadAttention(num_heads=8, key_dim=50, dropout=0.3)(input_layer, input_layer)
+    i = MultiHeadAttention(num_heads=8, key_dim=50, dropout=0.3)(
+        input_layer, input_layer
+    )
     # Flatten
     i = Flatten()(i)
     # Feedforward Softmax
     i = Dense(num_classes, activation="softmax")(i)
     return Model(inputs=input_layer, outputs=i)
+
 
 # 1-lead CNN + Transformer
 def build_model_CNN_Transformer_1lead(input_shape, num_classes):
@@ -106,9 +130,9 @@ def build_model_CNN_Transformer_12lead(input_shape, num_classes):
 def transformer_encoder(inputs, head_size, num_heads, ff_dim, dropout=0):
     # Normalization and Attention
     x = LayerNormalization(epsilon=1e-6)(inputs)
-    x = MultiHeadAttention(
-        key_dim=head_size, num_heads=num_heads, dropout=dropout
-    )(x, x)
+    x = MultiHeadAttention(key_dim=head_size, num_heads=num_heads, dropout=dropout)(
+        x, x
+    )
     x = Dropout(dropout)(x)
     res = x + inputs
 
@@ -118,6 +142,7 @@ def transformer_encoder(inputs, head_size, num_heads, ff_dim, dropout=0):
     x = Dropout(dropout)(x)
     x = Conv1D(filters=inputs.shape[-1], kernel_size=1)(x)
     return x + res
+
 
 def build_model_Trasnformer_N_blocks(
     input_shape,
@@ -140,6 +165,7 @@ def build_model_Trasnformer_N_blocks(
     outputs = Dense(2)(x)
     return Model(inputs, outputs)
 
+
 # == Residual CNN ==
 def conv(i, filters=16, kernel_size=9, strides=1):
     i = Conv1D(
@@ -149,17 +175,23 @@ def conv(i, filters=16, kernel_size=9, strides=1):
     i = leaky_relu()(i)
     i = SpatialDropout1D(0.1)(i)
     return i
+
+
 def residual_unit(x, filters, layers=3):
     inp = x
     for i in range(layers):
         x = conv(x, filters)
     return Add([x, inp])
+
+
 def conv_block(x, filters, strides):
     x = conv(x, filters)
     x = residual_unit(x, filters)
     if strides > 1:
         x = AveragePooling1D(strides, strides)(x)
     return x
+
+
 def build_model(input_shape, num_classes):
     inp = Input(input_shape)
     x = inp
@@ -202,6 +234,7 @@ def build_model_CNN_GRU(input_shape, num_classes):
 
     return Model(inputs=input_layer, outputs=i)
 
+
 # == Transformer fixed split ==
 def get_positional_encoding(seq_length, d_model):
     position = np.arange(seq_length)[:, np.newaxis]
@@ -212,7 +245,10 @@ def get_positional_encoding(seq_length, d_model):
     pe = pe[np.newaxis, ...]
     return tf.cast(pe, dtype=tf.float32)
 
-def build_model(input_shape, num_classes, num_heads=9, num_encoders=3, dff=512, dropout_rate=0.3):
+
+def build_model(
+    input_shape, num_classes, num_heads=9, num_encoders=3, dff=512, dropout_rate=0.3
+):
     seq_length, d_model = input_shape[1], input_shape[2]
 
     # Input layer
