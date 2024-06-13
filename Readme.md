@@ -21,9 +21,9 @@ Please go to section [Setup](#Setup) for an installation guide to run this repos
 <img width="700" alt="https://en.wikipedia.org/wiki/Electrocardiography" src="https://github.com/KIlian42/Atrial-Fibrillation-Classification-Using-Ensembled-Models/assets/57774167/1a2b2533-3aae-4876-8f32-2c24ce4cc90e">
 <br />Source: https://en.wikipedia.org/wiki/Electrocardiography
 <br /><br />
-<img alt="https://github.com/KIlian42/Atrial-Fibrillation-Classification-Using-Ensembled-Models/assets/57774167/66c8ec15-edfb-4a55-ae57-db5118aa18f2">
+<img src="https://github.com/KIlian42/Atrial-Fibrillation-Classification-Using-Ensembled-Models/assets/57774167/66c8ec15-edfb-4a55-ae57-db5118aa18f2">
 <br /><br />
-<img alt="https://github.com/KIlian42/Atrial-Fibrillation-Classification-Using-Ensembled-Models/assets/57774167/e1c2090c-f9e5-4027-9432-6cd6b535a130">
+<img src="https://github.com/KIlian42/Atrial-Fibrillation-Classification-Using-Ensembled-Models/assets/57774167/e1c2090c-f9e5-4027-9432-6cd6b535a130">
 
 # Setup
 
