@@ -23,7 +23,7 @@ Please go to section [Setup](#Setup) for an installation guide to run this repos
 <br /><br /><br /><br />
 <img width="1013" alt="Transformer model" src="https://github.com/KIlian42/Atrial-Fibrillation-Classification-Using-Ensembled-Models/assets/57774167/3c0b185b-b43b-49ef-bd72-5369edcab3a4">
 <br />Source: Ashish Vaswani and Noam Shazeer and Niki Parmar and Jakob Uszkoreit and Llion Jones
-and Aidan N. Gomez and Lukasz Kaiser and Illia Polosukhin. "Attention Is All You Need", 2023
+and Aidan N. Gomez and Lukasz Kaiser and Illia Polosukhin. "Attention Is All You Need", 2017
 <br /><br /><br /><br />
 <img src="https://github.com/KIlian42/Atrial-Fibrillation-Classification-Using-Ensembled-Models/assets/57774167/66c8ec15-edfb-4a55-ae57-db5118aa18f2">
 <br /><br /><br /><br />
