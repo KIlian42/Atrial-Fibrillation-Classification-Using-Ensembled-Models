@@ -20,9 +20,13 @@ Please go to section [Setup](#Setup) for an installation guide to run this repos
 
 <img width="700" alt="https://en.wikipedia.org/wiki/Electrocardiography" src="https://github.com/KIlian42/Atrial-Fibrillation-Classification-Using-Ensembled-Models/assets/57774167/1a2b2533-3aae-4876-8f32-2c24ce4cc90e">
 <br />Source: https://en.wikipedia.org/wiki/Electrocardiography
-<br /><br />
+<br /><br /><br /><br />
+<img width="1013" alt="Transformer model" src="https://github.com/KIlian42/Atrial-Fibrillation-Classification-Using-Ensembled-Models/assets/57774167/3c0b185b-b43b-49ef-bd72-5369edcab3a4">
+<br />Source: Ashish Vaswani and Noam Shazeer and Niki Parmar and Jakob Uszkoreit and Llion Jones
+and Aidan N. Gomez and Lukasz Kaiser and Illia Polosukhin. "Attention Is All You Need", 2023
+<br /><br /><br /><br />
 <img src="https://github.com/KIlian42/Atrial-Fibrillation-Classification-Using-Ensembled-Models/assets/57774167/66c8ec15-edfb-4a55-ae57-db5118aa18f2">
-<br /><br />
+<br /><br /><br /><br />
 <img src="https://github.com/KIlian42/Atrial-Fibrillation-Classification-Using-Ensembled-Models/assets/57774167/e1c2090c-f9e5-4027-9432-6cd6b535a130">
 
 # Setup
