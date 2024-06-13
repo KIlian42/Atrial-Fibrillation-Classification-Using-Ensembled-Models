@@ -14,7 +14,7 @@ https://drive.google.com/drive/folders/1e0LygPzn5tM9i2m2leXFwSs5J5og97W5 -> do d
 
 #### About the data
 
-Each ECG in physionet2021.h5 is stored as key (str): "PATIENT-ID" and value: 12-lead ECG (list[12 lists]), where each ECG has 12-leads and was recorded with a sampling rate of 500Hz. Most, but not all are 10 seconds long ECGs with 5000 sample points. Physionet 2021 and the provided .h5 dataset also include some ECG recordings less than 10 seconds or up to 15 minutes, which can be preprocessed (padded/truncated) to 10 seconds. The ECGs can have multiple labels, see Physionet2021_references.csv. The corresponding arrythmia label names are in the codes_SNOMED.csv listed. Notice, in my Google Drive is also the Physionet 2017 challenge data available and in the  directory "prepared" are further prepared datasets, since this thesis focuses particularly on the arrythmia types Sinus Rhythm (SR), Atrial Fibrilliation (AF), Atrial Flutter (AFL), Premature Atrial Contraction (PAC) and Premature Ventricular Contraction (PVC). The Physionet 2021 labels distinguish between more than 100 known arrythmia types. 
+Each ECG in physionet2021.h5 is stored as key (str): "PATIENT-ID" and value: 12-lead ECG (list[12 lists]), where each ECG has 12-leads and was recorded with a sampling rate of 500Hz. Most, but not all are 10 seconds long ECGs with 5000 sample points. Physionet 2021 and the provided .h5 dataset also include some ECG recordings less than 10 seconds or up to 15 minutes, which can be preprocessed (padded/truncated) to 10 seconds. The ECGs can have multiple labels, see Physionet2021_references.csv. The corresponding arrythmia label names are in the codes_SNOMED.csv listed. Notice, in my Google Drive is also the Physionet 2017 challenge data available and in the  directory "prepared" are further prepared datasets, since this thesis focuses particularly on the arrythmia types Sinus Rhythm (SR), Atrial Fibrilliation (AF), Atrial Flutter (AFL), Premature Atrial Contraction (PAC) and Premature Ventricular Contraction (PVC). The Physionet 2021 labels distinguish between more than 100 known arrhythmia types. 
 
 Please go to section [Setup](#Setup) for an installation guide to run this repository.
 
@@ -30,6 +30,9 @@ and Aidan N. Gomez and Lukasz Kaiser and Illia Polosukhin. "Attention Is All You
 <img src="https://github.com/KIlian42/Atrial-Fibrillation-Classification-Using-Ensembled-Models/assets/57774167/e1c2090c-f9e5-4027-9432-6cd6b535a130">
 
 # Setup
+
+<b> The repostiory is still under development, therefore just take a look at Jupiter_notebook.ipynb and ignore the following steps at the moment. </b>
+
 
 #### Prerequisites
 
