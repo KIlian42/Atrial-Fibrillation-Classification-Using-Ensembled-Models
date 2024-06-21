@@ -3,7 +3,7 @@ from collections import Counter
 import matplotlib.pyplot as plt
 import pandas as pd
 from tqdm import tqdm
-from util.label_sets import SR_AF_AFL_PAC_PVC_labels
+from util.map_labels import SR_AF_AFL_PAC_PVC_labels
 
 
 def main():
@@ -12,7 +12,7 @@ def main():
     X = []
     Y_labels_dict = {}
     Y_labels = []
-    labels_df = pd.read_csv("src/Datasets/physionet2021_references.csv", sep=";")
+    labels_df = pd.read_csv("src/datasets/physionet2021_references.csv", sep=";")
     pbar = tqdm(total=len(labels_df), desc="Load ECG labels")
     for _, row in labels_df.iterrows():
         Y_labels_dict[row["id"]] = row["labels"].split(",")

@@ -6,7 +6,7 @@ from collections import Counter
 from imblearn.under_sampling import RandomUnderSampler
 from imblearn.over_sampling import RandomOverSampler
 
-from util.load_physionet2021 import load_train_test_set
+from code_old.load_physionet2021 import load_train_test_set
 
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import accuracy_score
@@ -22,10 +22,9 @@ def main():
         os.getcwd(),
         f"src/datasets/Phsyionet2021_5classes_{FEATURES_LIBRARY}_extracted_features_original.csv",
     )
-    print("hi1")
 
     df = pd.read_csv(file_path, delimiter=";")
-    print("hi2")
+
     print(df.head)
     df = df.replace([-np.inf], np.nan)
     df = df.replace([np.inf], np.nan)
