@@ -2,6 +2,7 @@ import math
 import torch
 from torch import nn
 import torch.nn.functional as F
+from torch.utils.data import DataLoader, TensorDataset
 
 device = "cuda" if torch.cuda.is_available() else "cpu"
 print(f"Using device: {device}")
@@ -22,7 +23,6 @@ def scaled_dot_product(q, k, v, mask=None):
     d_k = q.size()[-1]
     scaled = torch.matmul(q, k.transpose(-1, -2)) / math.sqrt(d_k)
     if mask is not None:
-        # Broadcasting add. So just the last N dimensions need to match
         scaled += mask
     attention = F.softmax(scaled, dim=-1)
     values = torch.matmul(attention, v)
@@ -111,33 +111,28 @@ class Encoder(nn.Module):
 
     def forward(self, x):
         x = self.layers(x)
-        logits = self.output_layer(x)  # Linear transformation to logits
-        probabilities = self.sigmoid(logits)  # Apply sigmoid activation
+        logits = self.output_layer(x)
+        probabilities = self.sigmoid(logits)
         return probabilities
 
 # ======================
 
 model = Encoder(num_classes, d_model, ffn_hidden, num_heads, drop_prob, num_layers)
 
-# Function to count trainable parameters
+# Example forward pass
+# x = torch.randn((batch_size, max_sequence_length, d_model))
+# out = model(x)
+
 def count_trainable_parameters(model):
     return sum(p.numel() for p in model.parameters() if p.requires_grad)
-# Print the number of trainable parameters
 print(f"Number of trainable parameters: {count_trainable_parameters(model)}")
 
-x = torch.randn( (batch_size, max_sequence_length, d_model) ) # includes positional encoding
-out = model(x)
-
-# Example dataset and dataloader setup (replace with your actual data loading code)
-from torch.utils.data import DataLoader, TensorDataset
-# Example dataset (replace with your actual dataset)
-input_data = torch.randn(1000, max_sequence_length, d_model)  # Assume 1000 samples in the dataset
-# Generate random target data for multilabel classification (batch_size, max_sequence_length, num_classes)
+input_data = torch.randn(1000, max_sequence_length, d_model)
 target_data = torch.randint(0, 2, (1000, max_sequence_length, num_classes))
+
 dataset = TensorDataset(input_data, target_data)
 train_loader = DataLoader(dataset, batch_size=batch_size, shuffle=True)
-# Define loss function and optimizer
-criterion = nn.BCELoss()  # Binary Cross Entropy Loss for multilabel classification
+criterion = nn.BCELoss()
 optimizer = torch.optim.Adam(model.parameters(), lr=learning_rate)
 
 model.to(device)
