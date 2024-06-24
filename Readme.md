@@ -2,7 +2,7 @@
 
 This repository contains the research and code (Python) from my master thesis. (2023-2024)
 
-Title: "Atrial Fibrillation classification using ensembled models" (feature-based and deep-learning models)
+Title: "Single-lead ECG classification based on Transformer models" (feature-based and deep-learning models)
 
 The research utilizes electrocardiogram (ECG) data from the Physionet 2021 challenge: https://physionet.org/content/challenge-2021/1.0.3/.
 
@@ -31,7 +31,7 @@ and Aidan N. Gomez and Lukasz Kaiser and Illia Polosukhin. "Attention Is All You
 
 # Setup
 
-<b> The repostiory is still under development, therefore just take a look at Jupiter_notebook.ipynb and ignore the following steps at the moment. </b>
+<b> The repostiory is still under development, therefore just take a look at Jupiter_notebook_Physionet2021_categoricalCrossentropy.ipynb and ignore the following steps at the moment. </b>
 
 
 #### Prerequisites
