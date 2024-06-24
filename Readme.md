@@ -28,6 +28,8 @@ and Aidan N. Gomez and Lukasz Kaiser and Illia Polosukhin. "Attention Is All You
 <img src="https://github.com/KIlian42/Atrial-Fibrillation-Classification-Using-Ensembled-Models/assets/57774167/66c8ec15-edfb-4a55-ae57-db5118aa18f2">
 <br /><br /><br /><br />
 <img src="https://github.com/KIlian42/Atrial-Fibrillation-Classification-Using-Ensembled-Models/assets/57774167/e1c2090c-f9e5-4027-9432-6cd6b535a130">
+<br /><br /><br /><br />
+<img src="https://github.com/KIlian42/Atrial-Fibrillation-Classification-Using-Ensembled-Models/assets/57774167/94422599-de4d-4001-9ae0-e068863220c6">
 
 # Setup
 
