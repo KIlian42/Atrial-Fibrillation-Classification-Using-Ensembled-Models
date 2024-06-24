@@ -16,6 +16,12 @@ https://drive.google.com/drive/folders/1e0LygPzn5tM9i2m2leXFwSs5J5og97W5 -> do d
 
 Each ECG in physionet2021.h5 is stored as key (str): "PATIENT-ID" and value: 12-lead ECG (list[12 lists]), where each ECG has 12-leads and was recorded with a sampling rate of 500Hz. Most, but not all are 10 seconds long ECGs with 5000 sample points. Physionet 2021 and the provided .h5 dataset also include some ECG recordings less than 10 seconds or up to 15 minutes, which can be preprocessed (padded/truncated) to 10 seconds. The ECGs can have multiple labels, see Physionet2021_references.csv. The corresponding arrythmia label names are in the codes_SNOMED.csv listed. Notice, in my Google Drive is also the Physionet 2017 challenge data available and in the  directory "prepared" are further prepared datasets, since this thesis focuses particularly on the arrythmia types Sinus Rhythm (SR), Atrial Fibrilliation (AF), Atrial Flutter (AFL), Premature Atrial Contraction (PAC) and Premature Ventricular Contraction (PVC). The Physionet 2021 labels distinguish between more than 100 known arrhythmia types. 
 
+Reyna MA, Sadr N, Perez Alday EA, Gu A, Shah AJ, Robichaux C, Rad AB, Elola A, Seyedi S, Ansari S, Ghanbari H, Li Q, Sharma A, Clifford GD. Will Two Do? Varying Dimensions in Electrocardiography: The PhysioNet/Computing in Cardiology Challenge 2021. 2021 Computing in Cardiology (CinC), Brno, Czech Republic, 2021 (pp. 1-4). doi: 10.23919/CinC53138.2021.9662687
+
+Reyna, M., Sadr, N., Gu, A., Perez Alday, E. A., Liu, C., Seyedi, S., Shah, A., & Clifford, G. (2022). Will Two Do? Varying Dimensions in Electrocardiography: The PhysioNet/Computing in Cardiology Challenge 2021 (version 1.0.3). PhysioNet. https://doi.org/10.13026/34va-7q14.
+
+Goldberger AL, Amaral LAN, Glass L, Hausdorff JM, Ivanov PCh, Mark RG, Mietus JE, Moody GB, Peng C-K, Stanley HE. PhysioBank, PhysioToolkit, and PhysioNet: Components of a New Research Resource for Complex Physiologic Signals. Circulation 101(23):e215-e220 [Circulation Electronic Pages; http://circ.ahajournals.org/content/101/23/e215.full]; 2000 (June 13).
+
 Please go to section [Setup](#Setup) for an installation guide to run this repository.
 
 <img width="700" alt="https://en.wikipedia.org/wiki/Electrocardiography" src="https://github.com/KIlian42/Atrial-Fibrillation-Classification-Using-Ensembled-Models/assets/57774167/1a2b2533-3aae-4876-8f32-2c24ce4cc90e">
