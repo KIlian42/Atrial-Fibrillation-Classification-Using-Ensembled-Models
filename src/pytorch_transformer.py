@@ -9,9 +9,9 @@ print(f"Using device: {device}")
 
 num_classes = 26
 num_layers = 8
-max_sequence_length = 10
-d_model = 200
-num_heads = 8
+max_sequence_length = 40
+d_model = 50
+num_heads = 5
 drop_prob = 0.1
 ffn_hidden = 24
 
@@ -111,6 +111,7 @@ class Encoder(nn.Module):
 
     def forward(self, x):
         x = self.layers(x)
+        x = x.mean(dim=1)  # Aggregate over the sequence
         logits = self.output_layer(x)
         probabilities = self.sigmoid(logits)
         return probabilities
@@ -119,16 +120,12 @@ class Encoder(nn.Module):
 
 model = Encoder(num_classes, d_model, ffn_hidden, num_heads, drop_prob, num_layers)
 
-# Example forward pass
-# x = torch.randn((batch_size, max_sequence_length, d_model))
-# out = model(x)
-
 def count_trainable_parameters(model):
     return sum(p.numel() for p in model.parameters() if p.requires_grad)
 print(f"Number of trainable parameters: {count_trainable_parameters(model)}")
 
 input_data = torch.randn(1000, max_sequence_length, d_model)
-target_data = torch.randint(0, 2, (1000, max_sequence_length, num_classes))
+target_data = torch.randint(0, 2, (1000, num_classes))
 
 dataset = TensorDataset(input_data, target_data)
 train_loader = DataLoader(dataset, batch_size=batch_size, shuffle=True)
@@ -146,11 +143,9 @@ for epoch in range(num_epochs):
         outputs = model(inputs)
         loss = criterion(outputs, targets.float())
         loss.backward()
-        # Update weights
         optimizer.step()
         epoch_loss += loss.item() * inputs.size(0)
     epoch_loss /= len(train_loader.dataset)
     print(f'Epoch [{epoch+1}/{num_epochs}], Loss: {epoch_loss:.4f}')
 
 print('Finished Training')
-
