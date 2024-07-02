@@ -2,7 +2,7 @@ import os
 import json
 from tqdm import tqdm
 
-from util.load_physionet2021 import load_train_test_set
+from code_old.load_physionet2021 import load_train_test_set
 
 
 def main():

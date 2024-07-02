@@ -6,7 +6,7 @@ from collections import Counter
 from imblearn.under_sampling import RandomUnderSampler
 from imblearn.over_sampling import RandomOverSampler
 
-from util.load_physionet2021 import load_train_test_set
+from code_old.load_physionet2021 import load_train_test_set
 
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.ensemble import AdaBoostClassifier

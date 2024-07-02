@@ -5,7 +5,7 @@ from tqdm import tqdm
 import os
 from collections import Counter
 
-from util.label_sets import *
+from util.map_Physionet2021_labels import *
 
 
 def load_physionet2021_raw_ecgs(
