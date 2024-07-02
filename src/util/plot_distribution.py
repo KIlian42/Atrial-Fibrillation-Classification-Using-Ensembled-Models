@@ -3,7 +3,7 @@ from collections import Counter
 import matplotlib.pyplot as plt
 import pandas as pd
 from tqdm import tqdm
-from util.map_labels import SR_AF_AFL_PAC_PVC_labels
+from util.map_Physionet2021_labels import SR_AF_AFL_PAC_PVC_labels
 
 
 def main():
