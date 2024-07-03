@@ -3,7 +3,5 @@
 *.pyc
 *.h5
 *.csv
-
-# But not (use ! before path)
-# src/Datasets/*
-# !src/Datasets/file
+!src/datasets/prepared/biobss_features.csv
+!src/datasets/prepared/biobss_features_imputated.csv
