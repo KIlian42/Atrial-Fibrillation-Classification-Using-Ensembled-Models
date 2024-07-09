@@ -3,5 +3,6 @@
 *.pyc
 *.h5
 *.csv
+src/mydiagnostick
 !src/datasets/prepared/biobss_features.csv
 !src/datasets/prepared/biobss_features_imputated.csv
