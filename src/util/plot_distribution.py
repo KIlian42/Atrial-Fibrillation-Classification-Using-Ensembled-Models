@@ -106,6 +106,9 @@ def main():
     label_keys_1 = list(label_keys_1)
     label_values_1 = list(label_values_1)
 
+    total_count_1 = sum(label_values_1)
+    percentages_1 = [f"{(value / total_count_1) * 100:.2f}%" for value in label_values_1]
+
     for index, key in enumerate(label_keys_1):
         label_keys_1[index] = str(index + 1) + ". " + key[0].upper() + key[1:]
 
@@ -116,6 +119,9 @@ def main():
     label_keys_2, label_values_2 = zip(*combined_2)
     label_keys_2 = list(label_keys_2)
     label_values_2 = list(label_values_2)
+
+    total_count_2 = sum(label_values_2)
+    percentages_2 = [f"{(value / total_count_2) * 100:.2f}%" for value in label_values_2]
 
     for index, key in enumerate(label_keys_2):
         label_keys_2[index] = str(index + 1) + ". " + key[0].upper() + key[1:]
@@ -133,9 +139,10 @@ def main():
     bars_1 = ax1.bar(label_keys_1, label_values_1, color="#1f77b4")
 
     # Adding the counts on top of the bars for Plot 1
-    for bar in bars_1:
+    for bar, percentage in zip(bars_1, percentages_1):
         yval = bar.get_height()
-        ax1.text(bar.get_x() + bar.get_width() / 2, yval + 5, yval, ha="center", va="bottom", fontsize=16)
+        ax1.text(bar.get_x() + bar.get_width() / 2, yval + 5, yval, ha="center", va="bottom", fontsize=9)
+        ax1.text(bar.get_x() + bar.get_width() / 2, yval + 620, percentage, ha="center", va="top", fontsize=9)
 
     # Plot 2
     ax2.bar(label_keys_2, label_values_2, color="#1f77b4")
@@ -147,14 +154,15 @@ def main():
     bars_2 = ax2.bar(label_keys_2, label_values_2, color="#1f77b4")
 
     # Adding the counts on top of the bars for Plot 2
-    for bar in bars_2:
+    for bar, percentage in zip(bars_2, percentages_2):
         yval = bar.get_height()
         ax2.text(bar.get_x() + bar.get_width() / 2, yval + 5, yval, ha="center", va="bottom", fontsize=16)
+        ax2.text(bar.get_x() + bar.get_width() / 2, yval + 1000, percentage, ha="center", va="top", fontsize=16)
 
     plt.tight_layout()
     plt.savefig("combined_distribution.png", format="png", bbox_inches="tight")
-    plt.show()
-    plt.close()
+    #plt.show()
+    #plt.close()
 
 if __name__ == "__main__":
     main()
