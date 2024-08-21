@@ -74,10 +74,3 @@ def build_model(input_shape, num_classes):
     x = keras.layers.Dense(num_classes, activation="sigmoid")(x)
     model = keras.models.Model(inp, x)
     return model
-    
-    
-    # Final dense layer
-    x = keras.layers.Dense(num_classes, activation="sigmoid")(x)
-    
-    model = keras.models.Model(inp, x)
-    return model
